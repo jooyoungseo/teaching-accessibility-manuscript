@@ -49,11 +49,11 @@ knitr::opts_chunk$set(echo = FALSE)
 options(bookdown.theorem.preamble = FALSE)
 ```
 
-
 # Introduction {#sec:intro}
 
 According to LinkedIn's 2017 U.S. Emerging Jobs Report, machine learning engineers and data scientists rank among the top emerging jobs.
-With the urgent need for training a higher number of skilled data scientists, many institutes of higher education are developing their own data science curricula and a consensus on what should be included in such curricula has not yet been reached. In the latest version of \textit{Computing Competencies for Undergraduate Data Science Curricula} by ACM Data Science Task Force, accessibility is a recommended content for the data science curricula \cite{danyluk2021computing}.
+With the urgent need for training a higher number of skilled data scientists, many institutes of higher education are developing their own data science curricula and a consensus on what should be included in such curricula has not yet been reached. 
+In the latest version of \textit{Computing Competencies for Undergraduate Data Science Curricula} by ACM Data Science Task Force, accessibility is a recommended content for the data science curricula \cite{danyluk2021computing}.
 
 Despite the recent recommendations, accessibility has not yet found its place in data science course materials.
 One main reason for this is that accessibility is often covered in the computer sciences or the digital arts if at all covered.
@@ -64,7 +64,9 @@ In this proposed talk, we will argue that accessibility should be taught as earl
 As data science educators who teach accessibility as part of our lower-division courses in two different institutions, we will share specific examples as well as open-access resources that can be utilized by other data science instructors.
 We teach R as the main language in our courses thus our examples would be shaped around using R, however, instructors using a different set of language(s) or even teaching language-agnostic courses may still find the content applicable for their own courses.
 
-Although there are various ways to represent data patterns and models, visualization has been primarily taught in many data science courses for its efficiency. Such vision-dependent output may cause critical barriers against those who are blind and visually impaired, and sometimes people with learning disabilities. We argue that instructors need to teach multiple data representation methods so that all students of all abilities can benefit from multi-sensory data augmentation.
+Although there are various ways to represent data patterns and models, visualization has been primarily taught in many data science courses for its efficiency. 
+Such vision-dependent output may cause critical barriers against those who are blind and visually impaired, and sometimes people with learning disabilities. 
+We argue that instructors need to teach multiple data representation methods so that all students of all abilities can benefit from multi-sensory data augmentation.
 
 
 # Learning Goals {#sec:goals}
@@ -83,26 +85,35 @@ In addition we rely on `scale_fill_viridis_d()` for generating  `ggplot` visuali
 
 ## Data verbalization (i.e., alt text)
 
-Our definition of "data verbalization" refers to a way of representing data patterns using alternative text description (i.e., alt text). Images without alt text markup are not readily accessible to assistive technologies (i.e., screen readers; refreshable braille displays; text-based voice commands) and web search parsers. In other words, appropriately designed alt text can not only give assistive technology users minimum access to visualized data, but also provide all students with a much richer context.
+Our definition of "data verbalization" refers to a way of representing data patterns using alternative text description (i.e., alt text). 
+Images without alt text markup are not readily accessible to assistive technologies (i.e., screen readers; refreshable braille displays; text-based voice commands) and web search parsers. 
+In other words, appropriately designed alt text can not only give assistive technology users minimum access to visualized data, but also provide all students with a much richer context.
 
 There are two ways to create alt text: (1) auto-generated alt text; and (2) manual alt text.
 
-Currently, `BrailleR::VI()` function has a capability to auto-generate alt text for basic R graphics and ggplot objects. Supported graphic types include as follows: `graphics::hist()`, `graphics::boxplot()`, `ggplot2::geom_bar()`, `ggplot2::geom_histogram()`, and `ggplot2::geom_boxplot()`.
+Currently, `BrailleR::VI()` function has a capability to auto-generate alt text for basic R graphics and ggplot objects. 
+Supported graphic types include as follows: `graphics::hist()`, `graphics::boxplot()`, `ggplot2::geom_bar()`, `ggplot2::geom_histogram()`, and `ggplot2::geom_boxplot()`.
 
-For other types of graphics that  `BrailleR` doesn’t support, we ask our students to manually create an alt text. We rely on Amy Cesal's “simple formula for writing alt text for data visualization” [@cesal] , which is as follows: “alt= _Chart type_ of _type of data_ where _reason for including chart_.” She also provides a great example based on this formula: “Bar chart of gun murders per 100,000 people where America’s murder rate is 6 times worse than Canada, and 30 times Australia.” We highly recommend other instructors try out this alt text formula with their students for manual text description.
+For other types of graphics that  `BrailleR` doesn’t support, we ask our students to manually create an alt text. We rely on Amy Cesal's “simple formula for writing alt text for data visualization” [@cesal] , which is as follows: “alt= _Chart type_ of _type of data_ where _reason for including chart_.” 
+She also provides a great example based on this formula: “Bar chart of gun murders per 100,000 people where America’s murder rate is 6 times worse than Canada, and 30 times Australia.” We highly recommend other instructors try out this alt text formula with their students for manual text description.
 
 Once alt text is prepared either programmatically or manually, it can be embedded in static and dynamic plot objects in R, such as `ggplot2::labs(..., alt = "[alt text]")`, 
-`shiny::renderPlot(..., alt = "[alt tex]")`. We also ask our students to provide alt text within their R Markdown chunks by using `fig.alt = "[alt text]"` chunk option, and within Pandoc-flavor/Common Markdown with `![alt text here.](path/to/file)` syntax.
+`shiny::renderPlot(..., alt = "[alt tex]")`. 
+We also ask our students to provide alt text within their R Markdown chunks by using `fig.alt = "[alt text]"` chunk option, and within Pandoc-flavor/Common Markdown with `![alt text here.](path/to/file)` syntax.
 
 ## Data sonification using sound
 
-Our definition of sonification refers to a data representation method using stereo sound and various audible patterns. For example, `plot(x = 1:5, y = 1:5)` can be sonified using `sonify::sonify(x = 1:5, y = 1:5)`. In this example, a scatter plot is represented by a sound. Position on the X axis is communicated using the left-to-right stereo effect; the pitch of the sound indicates position on the Y axis.
+Our definition of sonification refers to a data representation method using stereo sound and various audible patterns. For example, `plot(x = 1:5, y = 1:5)` can be sonified using `sonify::sonify(x = 1:5, y = 1:5)`. 
+In this example, a scatter plot is represented by a sound. Position on the X axis is communicated using the left-to-right stereo effect; the pitch of the sound indicates position on the Y axis.
 
 Data sonification is very useful when representing linear patterns; however, there is much room for improvement in terms of complex data sonification as of this writing. Thus, we suggest using sonification for simple linear regression models.
 
 ## Data tactualization using Swell Form machine
 
-Data tactulization refers to making data visualization in a tactile form so that it can be touchable by fingers. Although this requires some expensive embossing hardware (e.g., braille embosser or Swell Form Heating Machine), this may be one of the most effective and accessible data representations for those who are blind or visually impaired. One of the authors in this talk, developed a simple R package, called `tactileR` that can generate a ready-to-emboss pdf file from R graphics and ggplot objects. Students and instructors can produce their own tactile graphics by using the following functions: `tactileR::brl_begin()`; [their graphic object]; `tactileR::brl_end()`.
+Data tactulization refers to making data visualization in a tactile form so that it can be touchable by fingers. 
+Although this requires some expensive embossing hardware (e.g., braille embosser or Swell Form Heating Machine), this may be one of the most effective and accessible data representations for those who are blind or visually impaired. 
+One of the authors in this talk, developed a simple R package, called `tactileR` that can generate a ready-to-emboss pdf file from R graphics and ggplot objects. 
+Students and instructors can produce their own tactile graphics by using the following functions: `tactileR::brl_begin()`; [their graphic object]; `tactileR::brl_end()`.
 
 # Delivery of Content
 
@@ -117,7 +128,9 @@ A reproducible workflow that is open-source provides an opportunity for users wh
 Thus in addition to teaching different representations of data, instructors may consider teaching reproducibility as well.
 
 # Closing Remarks
-We firmly believe that an accessible future in the field of data science requires educators to deliberately teach accessibility as part of the curriculum. We also acknowledge that what we have presented here is only a small portion of the intersection of visual accessibility and data science. One of the co-authors was supported through a Teach Access grant to develop curricular materials on teaching accessibility as part of the data science curriculum. These open-access teaching materials can be accessed at [HIDDEN FOR REVIEW].
+We firmly believe that an accessible future in the field of data science requires educators to deliberately teach accessibility as part of the curriculum. 
+We also acknowledge that what we have presented here is only a small portion of the intersection of visual accessibility and data science. 
+One of the co-authors was supported through a Teach Access grant to develop curricular materials on teaching accessibility as part of the data science curriculum. These open-access teaching materials can be accessed at [HIDDEN FOR REVIEW].
 
 
 # References {-}
