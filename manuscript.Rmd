@@ -7,7 +7,7 @@ author:
   affiliation: "1"  # Must be quoted when including comma.
   email: "jseo1005@illinois.edu"  # Only corresponding authors require email.
 - name: Mine Dogucu
-  affiliation: 2,3
+  affiliation: "2,3"
 
 
 affiliation:
