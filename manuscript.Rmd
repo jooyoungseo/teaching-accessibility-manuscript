@@ -53,7 +53,7 @@ options(bookdown.theorem.preamble = FALSE)
 
 According to LinkedIn's 2017 U.S. Emerging Jobs Report, machine learning engineers and data scientists rank among the top emerging jobs.
 With the urgent need for training a higher number of skilled data scientists, many institutes of higher education are developing their own data science curricula and a consensus on what should be included in such curricula has not yet been reached. 
-In the latest version of \textit{Computing Competencies for Undergraduate Data Science Curricula} by ACM Data Science Task Force, accessibility is a recommended content for the data science curricula \cite{danyluk2021computing}.
+In the latest version of *Computing Competencies for Undergraduate Data Science Curricula* by ACM Data Science Task Force, accessibility is a recommended content for the data science curricula \cite{danyluk2021computing}.
 
 Despite the recent recommendations, accessibility has not yet found its place in data science course materials.
 One main reason for this is that accessibility is often covered in the computer sciences or the digital arts if at all covered.
