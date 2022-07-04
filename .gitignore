@@ -6,3 +6,10 @@
 manuscript.tex
 manuscript.pdf
 manuscript.log
+manuscript.aux
+manuscript.fdb_latexmk
+manuscript.bbl
+manuscript.blg
+manuscript.fls
+manuscript.out
+manuscript.synctex.gz
