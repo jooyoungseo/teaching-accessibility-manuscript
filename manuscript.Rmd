@@ -1,7 +1,7 @@
 ---
 title: |
   Teaching Visual Accessibility in the Introductory Data Science Classes: Why, What, When, and How
-shorttitle: Teaching Accessibility in Data Science
+shorttitle: Teaching Accessibility in Data Science # nolint # nolint
 author:
 - name: JooYoung Seo
   affiliation: "1"  # Must be quoted when including comma.
@@ -19,7 +19,7 @@ affiliation:
   institution: "Department of Statistics, University of California Irvine"
 
 abstract: |
-  Although there are various ways to represent data patterns and models, visualization has been primarily taught in many data science courses for its efficiency. Such vision-dependent output may cause critical barriers against those who are blind and visually impaired, and sometimes people with learning disabilities. We argue that instructors need to teach multiple data representation methods so that all students of all abilities can benefit from multi-sensory data augmentation. In this proposed talk, we will argue that accessibility should be taught as early as the introductory course as part of the data science curriculum so that regardless of whether learners major in data science or not they can have foundational exposure to accessibility. As data science educators who teach accessibility as part of our lower-division courses in two different institutions, we will share specific examples as well as open-access resources that can be utilized by other data science instructors.
+  Although there are various ways to represent data patterns and models, visualization has been primarily taught in many data science courses for its efficiency. Such vision-dependent output may cause critical barriers against those who are blind and visually impaired, and people with learning disabilities. We argue that instructors need to teach multiple data representation methods so that all students of all abilities can benefit from multi-sensory data augmentation. In this paper, we will argue that accessibility should be taught as early as the introductory course as part of the data science curriculum so that regardless of whether learners major in data science or not they can have foundational exposure to accessibility. As data science educators who teach accessibility as part of our lower-division courses in two different institutions, we will share specific examples as well as open-access resources that can be utilized by other data science instructors.
 keywords: 
   - Data representations
   - Curriculum
@@ -35,41 +35,51 @@ doi: "xx.xxxx/xxxxxxxxx"
 received: "April, 2020"  # optional: comment it out if no received date
 accepted: "May, 2020"  # optional: comment it out if no accepted date
 
-bibliography: "bib/references.bib"
+bibliography: ["bib/references.bib", "bib/packages.bib"]
 output:
   rticles::jds_article: default
   bookdown::pdf_book:
     base_format: rticles::jds_article # for using bookdown features like \@ref()
 ---
 
-```{r setup, include = FALSE, echo = FALSE, purl = FALSE}
+```{r setup, include=FALSE, echo=FALSE, purl=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 
 # deactivate addition of preamble when this format is used with bookdown
 options(bookdown.theorem.preamble = FALSE)
 ```
 
-# Introduction {#sec:intro}
+```{r pkg, include=FALSE, echo=FALSE, warning=FALSE, message=FALSE, cache=TRUE, purl=FALSE}
+# Load required packages
+library(ggplot2)
+library(scales)
+library(BrailleR)
+library(sonify)
+library(tactileR)
+library(tidyverse)
+```
+
+# Introduction {#intro}
 
 According to LinkedIn's 2017 U.S. Emerging Jobs Report, machine learning engineers and data scientists rank among the top emerging jobs.
-With the urgent need for training a higher number of skilled data scientists, many institutes of higher education are developing their own data science curricula and a consensus on what should be included in such curricula has not yet been reached. 
-In the latest version of *Computing Competencies for Undergraduate Data Science Curricula* by ACM Data Science Task Force, accessibility is a recommended content for the data science curricula @danyluk2021computing.
+With the urgent need for training a higher number of skilled data scientists, many institutes of higher education are developing their own data science curricula, and a consensus on what should be included in such curricula has not yet been reached. 
+In the latest version of *Computing Competencies for Undergraduate Data Science Curricula* by ACM Data Science Task Force, accessibility is a recommended content for the data science curricula [@danyluk2021computing].
 
 Despite the recent recommendations, accessibility has not yet found its place in data science course materials.
 One main reason for this is that accessibility is often covered in the computer sciences or the digital arts if at all covered.
 However, data science is an interdisciplinary field that is taught in various disciplines including computer science, statistics, mathematics, business schools, and digital humanities.
 Thus, the resources and conversations around accessibility have not yet extended to the broader data science education community.
 
-In this proposed talk, we will argue that accessibility should be taught as early as the introductory course as part of the data science curriculum so that regardless of whether learners major in data science or not they can have foundational exposure to accessibility.
+In this paper, we will argue that accessibility should be taught as early as the introductory course as part of the data science curriculum so that regardless of whether learners major in data science or not they can have foundational exposure to accessibility.
 As data science educators who teach accessibility as part of our lower-division courses in two different institutions, we will share specific examples as well as open-access resources that can be utilized by other data science instructors.
-We teach R as the main language in our courses thus our examples would be shaped around using R, however, instructors using a different set of language(s) or even teaching language-agnostic courses may still find the content applicable for their own courses.
+We teach R [@R-base] as the main language in our courses thus our examples would be shaped around using R, however, instructors using a different set of language(s) or even teaching language-agnostic courses may still find the content applicable for their own courses.
 
 Although there are various ways to represent data patterns and models, visualization has been primarily taught in many data science courses for its efficiency. 
 Such vision-dependent output may cause critical barriers against those who are blind and visually impaired, and sometimes people with learning disabilities. 
 We argue that instructors need to teach multiple data representation methods so that all students of all abilities can benefit from multi-sensory data augmentation.
 
 
-# Learning Goals {#sec:goals}
+# Learning Goals {#goals}
 
 When shaping our curricular content we have considered multi data representations and their relation to accessibility. We outline the learning goals of this content in this section for different ways of representing data. 
 
@@ -81,7 +91,7 @@ In our courses, while teaching colors in data visualizations, we introduce color
 Those without any color vision deficiencies experience what data visualizations would look like to a sighted person that does have color blindness. 
 Students get to experience this for red-, green-, and blue-blindness. 
 For their data visualizations, instead of relying on the default color selection of R packages, students are introduced to the Okabe-Ito color palette which is known to be accessible to people with color vision deficiencies [@okabe]. 
-In addition we rely on `scale_fill_viridis_d()` for generating  `ggplot` visualizations that can be perceived by those with common forms of color blindness. 
+In addition we rely on `scale_fill_viridis_d()` for generating `ggplot` visualizations that can be perceived by those with common forms of color blindness. 
 
 ## Data verbalization (i.e., alt text)
 
@@ -91,7 +101,7 @@ In other words, appropriately designed alt text can not only give assistive tech
 
 There are two ways to create alt text: (1) auto-generated alt text; and (2) manual alt text.
 
-Currently, `BrailleR::VI()` function has a capability to auto-generate alt text for basic R graphics and ggplot objects. 
+Currently, `BrailleR::VI()` [@R-BrailleR] function has a capability to auto-generate alt text for basic R graphics and ggplot objects. 
 Supported graphic types include as follows: `graphics::hist()`, `graphics::boxplot()`, `ggplot2::geom_bar()`, `ggplot2::geom_histogram()`, and `ggplot2::geom_boxplot()`.
 
 For other types of graphics that  `BrailleR` doesn’t support, we ask our students to manually create an alt text. We rely on Amy Cesal's “simple formula for writing alt text for data visualization” [@cesal] , which is as follows: “alt= _Chart type_ of _type of data_ where _reason for including chart_.” 
@@ -103,7 +113,7 @@ We also ask our students to provide alt text within their R Markdown chunks by u
 
 ## Data sonification using sound
 
-Our definition of sonification refers to a data representation method using stereo sound and various audible patterns. For example, `plot(x = 1:5, y = 1:5)` can be sonified using `sonify::sonify(x = 1:5, y = 1:5)`. 
+Our definition of sonification refers to a data representation method using stereo sound and various audible patterns. For example, `plot(x = 1:5, y = 1:5)` can be sonified using `sonify::sonify(x = 1:5, y = 1:5)` [@R-sonify]. 
 In this example, a scatter plot is represented by a sound. Position on the X axis is communicated using the left-to-right stereo effect; the pitch of the sound indicates position on the Y axis.
 
 Data sonification is very useful when representing linear patterns; however, there is much room for improvement in terms of complex data sonification as of this writing. Thus, we suggest using sonification for simple linear regression models.
@@ -112,7 +122,7 @@ Data sonification is very useful when representing linear patterns; however, the
 
 Data tactulization refers to making data visualization in a tactile form so that it can be touchable by fingers. 
 Although this requires some expensive embossing hardware (e.g., braille embosser or Swell Form Heating Machine), this may be one of the most effective and accessible data representations for those who are blind or visually impaired. 
-One of the authors in this talk, developed a simple R package, called `tactileR` that can generate a ready-to-emboss pdf file from R graphics and ggplot objects. 
+One of the authors in this paper, developed a simple R package, called `tactileR` [@R-tactileR] that can generate a ready-to-emboss pdf file from R graphics and ggplot objects. 
 Students and instructors can produce their own tactile graphics by using the following functions: `tactileR::brl_begin()`; [their graphic object]; `tactileR::brl_end()`.
 
 # Delivery of Content
@@ -132,5 +142,8 @@ We firmly believe that an accessible future in the field of data science require
 We also acknowledge that what we have presented here is only a small portion of the intersection of visual accessibility and data science. 
 One of the co-authors was supported through a Teach Access grant to develop curricular materials on teaching accessibility as part of the data science curriculum. These open-access teaching materials can be accessed at [HIDDEN FOR REVIEW].
 
-
 # References {-}
+
+```{r include=FALSE, echo=FALSE, warning=FALSE, message=FALSE, cache=TRUE, dependson="pkg"}
+knitr::write_bib(file = "bib/packages.bib")
+```
