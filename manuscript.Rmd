@@ -51,6 +51,7 @@ options(bookdown.theorem.preamble = FALSE)
 
 ```{r pkg, include=FALSE, echo=FALSE, warning=FALSE, message=FALSE, cache=TRUE, purl=FALSE}
 # Load required packages
+## Any packages loaded in this chunk will automatically be added to `bib/packages.bib` for citation use
 library(ggplot2)
 library(scales)
 library(BrailleR)
