@@ -4,3 +4,11 @@ BrailleR
 tuneR
 sonify
 tactileR
+tidyverse
+tibble
+tidyr
+readr
+purrr
+dplyr
+stringr
+forcats

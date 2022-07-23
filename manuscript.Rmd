@@ -75,10 +75,9 @@ In this paper, we will argue that accessibility should be taught as early as the
 As data science educators who teach accessibility as part of our lower-division courses in two different institutions, we will share specific examples as well as open-access resources that can be utilized by other data science instructors.
 We teach R [@R-base] as the main language in our courses thus our examples would be shaped around using R, however, instructors using a different set of language(s) or even teaching language-agnostic courses may still find the content applicable for their own courses.
 
-Although there are various ways to represent data patterns and models, visualization has been primarily taught in many data science courses for its efficiency. 
+Although there are various ways to represent data patterns and models, visualization has been primarily taught in many data science courses for its efficiency (cite). 
 Such vision-dependent output may cause critical barriers against those who are blind and visually impaired, and sometimes people with learning disabilities. 
 We argue that instructors need to teach multiple data representation methods so that all students of all abilities can benefit from multi-sensory data augmentation.
-
 
 # Learning Goals {#goals}
 
@@ -92,7 +91,7 @@ In our courses, while teaching colors in data visualizations, we introduce color
 Those without any color vision deficiencies experience what data visualizations would look like to a sighted person that does have color blindness. 
 Students get to experience this for red-, green-, and blue-blindness. 
 For their data visualizations, instead of relying on the default color selection of R packages, students are introduced to the Okabe-Ito color palette which is known to be accessible to people with color vision deficiencies [@okabe]. 
-In addition we rely on `scale_fill_viridis_d()` for generating `ggplot` visualizations that can be perceived by those with common forms of color blindness. 
+In addition we rely on `ggplot2::scale_fill_viridis_d()` for generating `ggplot` visualizations [@ggplot22016] that can be perceived by those with common forms of color blindness. 
 
 ## Data verbalization (i.e., alt text)
 
@@ -139,6 +138,7 @@ A reproducible workflow that is open-source provides an opportunity for users wh
 Thus in addition to teaching different representations of data, instructors may consider teaching reproducibility as well.
 
 # Closing Remarks
+
 We firmly believe that an accessible future in the field of data science requires educators to deliberately teach accessibility as part of the curriculum. 
 We also acknowledge that what we have presented here is only a small portion of the intersection of visual accessibility and data science. 
 One of the co-authors was supported through a Teach Access grant to develop curricular materials on teaching accessibility as part of the data science curriculum. These open-access teaching materials can be accessed at [HIDDEN FOR REVIEW].
