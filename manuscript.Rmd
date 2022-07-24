@@ -60,9 +60,10 @@ library(tactileR)
 library(tidyverse)
 library(shiny)
 library(knitr)
+library(gt)
 ```
 
-# Introduction {#intro}
+# Introduction
 
 According to LinkedIn's 2017 U.S. Emerging Jobs Report, machine learning engineers and data scientists rank among the top emerging jobs.
 With the urgent need for training a higher number of skilled data scientists, many institutes of higher education are developing their own data science curricula, and a consensus on what should be included in such curricula has not yet been reached. 
@@ -81,7 +82,7 @@ Although there are various ways to represent data patterns and models, visualiza
 Such vision-dependent output may cause critical barriers against those who are blind and visually impaired, and sometimes people with learning disabilities [@kimAccessibleVisualizationDesign2021; @marriottInclusiveDataVisualization2021; @leeReachingBroaderAudiences2020]. 
 We argue that instructors need to teach multiple data representation methods so that all students of all abilities can benefit from multi-sensory data augmentation.
 
-# Learning Goals {#goals}
+# Learning Goals
 
 When shaping our curricular content we have considered multi data representations and their relation to accessibility. We outline the learning goals of this content in this section for different ways of representing data. 
 
