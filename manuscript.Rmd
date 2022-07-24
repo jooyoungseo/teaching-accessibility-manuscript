@@ -38,8 +38,8 @@ accepted: "May, 2020"  # optional: comment it out if no accepted date
 bibliography: ["bib/references.bib", "bib/packages.bib"]
 output:
   rticles::jds_article: 
-    includes:
-      in_header: header.tex #header-hidden.tex can be used when creating an anonymized version for review
+    # includes:
+      # in_header: header.tex #header-hidden.tex can be used when creating an anonymized version for review
   bookdown::pdf_book:
     base_format: rticles::jds_article # for using bookdown features like \@ref()
 ---
