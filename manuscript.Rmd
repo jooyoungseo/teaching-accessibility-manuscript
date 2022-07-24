@@ -147,6 +147,6 @@ One of the co-authors was supported through a Teach Access grant to develop curr
 
 # References {-}
 
-```{r include=FALSE, echo=FALSE, warning=FALSE, message=FALSE, cache=TRUE, dependson="pkg"}
+```{r pkg_bib, include=FALSE, echo=FALSE, warning=FALSE, message=FALSE, cache=TRUE, dependson="pkg"}
 knitr::write_bib(file = "bib/packages.bib")
 ```
