@@ -15,3 +15,6 @@ forcats
 shiny
 knitr
 gt
+colorspace
+colorblindr
+palmerpenguins

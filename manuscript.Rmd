@@ -107,20 +107,21 @@ We visualize the relationship between flipper length and bill length of penguins
 
 
 ```{r penguins-basic, echo=FALSE, fig.cap="Visualization showing the relationship between flipper length (mm) and bill length (mm) of penguins for three different species of penguins", fig.alt="", warning=FALSE, fig.height=3}
-library(ggplot2) #It seems like the pkg chunk is not loading packages. I did not want to make changes there since I do not know what your intention was.
+library(ggplot2) # It seems like the pkg chunk is not loading packages. I did not want to make changes there since I do not know what your intention was.
 library(palmerpenguins)
 fig <- ggplot(penguins, aes(flipper_length_mm, bill_length_mm, color = species)) +
-         geom_point() +
-  labs(x = "Flipper Length(mm)",
-       y = "Bill Length (mm)",
-       color = "Species") +
+  geom_point() +
+  labs(
+    x = "Flipper Length(mm)",
+    y = "Bill Length (mm)",
+    color = "Species"
+  ) +
   theme_bw()
 
 fig
-
 ```
 
-The `colorblindr` package provides a set of functions that can be useful in teaching and practising color blindness accessibility. 
+The `colorblindr` package [@R-colorblindr] provides a set of functions that can be useful in teaching and practising color blindness accessibility. 
 For instance, `cvd_grid()` function provides color-deficiency simulations of a given plot. 
 In the code chunk below the plot is named as `fig`. 
 The code creates a grid of four plots where each plot shows a different color vision deficiency.
