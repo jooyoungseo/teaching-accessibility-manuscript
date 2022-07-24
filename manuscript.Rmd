@@ -188,6 +188,18 @@ We believe that a natural connection between data science and accessibility can 
 While delivering the content, instructors should try to provide as many opportunities as possible for students to experience using these tools themselves. 
 For instance, each student should use a screen reader at least once regardless of their visual ability status and hear the alternate text that they have written.
 
+Ample opportunities in learning accessibility should also include assessments. 
+For instance, instructors incorporating accessibility should modify assessment instructions and rubrics to include accessibility. 
+This will prevent students just hearing about accessibility in the lecture then forgetting about it. 
+Ideally, the assessments should not treat accessibility as a learning objective at a single point in the academic term. 
+For instance, if accessibility is covered in Week 3 of the term, students can (and should) still be expected to write alternate texts for visualizations in Week 10. 
+
+In this manuscript we have focused on domain-specific (i.e. data science) knowledge of accessibility using a particular language (R). 
+Depending on the courses taught, instructors may want to extend the accessibility content to non-data contexts. 
+In addition they may adopt the content in their courses with other languages such as Python and SAS or even in their language-agnostic courses. 
+Overall, if taught well, a student learning accessibility content, for instance, should be able to include alternate text in their PowerPoint presentation in their Anthropology class. 
+In other words, accessibility knowledge should extend beyond data science and beyond any tool.
+
 Although, we have mainly focused on tools and different representations of data, in order to have students develop accessible content, a more crucial accessibility feature is reproducible workflows. 
 Scholars often focus on reproducibility and replication of scientific findings. 
 We believe that reproducibility can often serve as an accessibility feature in data science context. 
@@ -198,7 +210,8 @@ Thus in addition to teaching different representations of data, instructors may 
 
 We firmly believe that an accessible future in the field of data science requires educators to deliberately teach accessibility as part of the curriculum. 
 We also acknowledge that what we have presented here is only a small portion of the intersection of visual accessibility and data science. 
-One of the co-authors was supported through a Teach Access grant to develop curricular materials on teaching accessibility as part of the data science curriculum. These open-access teaching materials can be accessed at [HIDDEN FOR REVIEW].
+The second co-author was supported through a Teach Access grant to develop curricular materials on teaching accessibility as part of the data science curriculum. 
+Educators interested in teaching accessibility can follow the organization's work at https://teachaccess.org/. 
 
 # References {-}
 
