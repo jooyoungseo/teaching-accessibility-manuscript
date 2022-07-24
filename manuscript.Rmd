@@ -58,6 +58,8 @@ library(BrailleR)
 library(sonify)
 library(tactileR)
 library(tidyverse)
+library(shiny)
+library(knitr)
 ```
 
 # Introduction {#intro}
@@ -75,8 +77,8 @@ In this paper, we will argue that accessibility should be taught as early as the
 As data science educators who teach accessibility as part of our lower-division courses in two different institutions, we will share specific examples as well as open-access resources that can be utilized by other data science instructors.
 We teach R [@R-base] as the main language in our courses thus our examples would be shaped around using R, however, instructors using a different set of language(s) or even teaching language-agnostic courses may still find the content applicable for their own courses.
 
-Although there are various ways to represent data patterns and models, visualization has been primarily taught in many data science courses for its efficiency (cite). 
-Such vision-dependent output may cause critical barriers against those who are blind and visually impaired, and sometimes people with learning disabilities. 
+Although there are various ways to represent data patterns and models, visualization has been primarily taught in many data science courses for its efficiency [@kimAccessibleVisualizationDesign2021]. 
+Such vision-dependent output may cause critical barriers against those who are blind and visually impaired, and sometimes people with learning disabilities [@kimAccessibleVisualizationDesign2021; @marriottInclusiveDataVisualization2021; @leeReachingBroaderAudiences2020]. 
 We argue that instructors need to teach multiple data representation methods so that all students of all abilities can benefit from multi-sensory data augmentation.
 
 # Learning Goals {#goals}
@@ -108,8 +110,7 @@ For other types of graphics that  `BrailleR` doesn’t support, we ask our stude
 She also provides a great example based on this formula: “Bar chart of gun murders per 100,000 people where America’s murder rate is 6 times worse than Canada, and 30 times Australia.” We highly recommend other instructors try out this alt text formula with their students for manual text description.
 
 Once alt text is prepared either programmatically or manually, it can be embedded in static and dynamic plot objects in R, such as `ggplot2::labs(..., alt = "[alt text]")`, 
-`shiny::renderPlot(..., alt = "[alt tex]")`. 
-We also ask our students to provide alt text within their R Markdown chunks by using `fig.alt = "[alt text]"` chunk option, and within Pandoc-flavor/Common Markdown with `![alt text here.](path/to/file)` syntax.
+`shiny::renderPlot(..., alt = "[alt tex]")` [@R-shiny]. We also ask our students to provide alt text within their R Markdown chunks by using `fig.alt = "[alt text]"` `knitr` chunk option [@knitr2014], and within Pandoc-flavor/Common Markdown with `![alt text here.](path/to/file)` syntax [@macfarlanePandoc2022].
 
 ## Data sonification using sound
 
