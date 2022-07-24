@@ -65,8 +65,8 @@ library(gt)
 
 # Introduction
 
-According to LinkedIn's 2017 U.S. Emerging Jobs Report, machine learning engineers and data scientists rank among the top emerging jobs.
-With the urgent need for training a higher number of skilled data scientists, many institutes of higher education are developing their own data science curricula, and a consensus on what should be included in such curricula has not yet been reached. 
+According to LinkedIn's 2017 U.S. Emerging Jobs Report, machine learning engineers and data scientists rank among the top emerging jobs (cite).
+With the urgent need for training a higher number of skilled data scientists, many institutes of higher education are developing their own data science curricula. However, a consensus on what should be included in such curricula has not yet been reached. 
 In the latest version of *Computing Competencies for Undergraduate Data Science Curricula* by ACM Data Science Task Force, accessibility is a recommended content for the data science curricula [@danyluk2021computing].
 
 Despite the recent recommendations, accessibility has not yet found its place in data science course materials.
