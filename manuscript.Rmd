@@ -46,7 +46,7 @@ output:
 
 
 ```{r setup, include=FALSE, echo=FALSE, purl=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(echo = FALSE, fig.path = "figure/")
 
 # deactivate addition of preamble when this format is used with bookdown
 options(bookdown.theorem.preamble = FALSE)
@@ -169,6 +169,10 @@ BrailleR::VI(hist(airquality$Ozone))
 
 For other types of graphics that  `BrailleR` doesn’t support, we ask our students to manually create an alt text. We rely on Amy Cesal's “simple formula for writing alt text for data visualization” [@cesal] , which is as follows: “alt= _Chart type_ of _type of data_ where _reason for including chart_.” 
 She also provides a great example based on this formula: “Bar chart of gun murders per 100,000 people where America’s murder rate is 6 times worse than Canada, and 30 times Australia.” We highly recommend other instructors try out this alt text formula with their students for manual text description.
+
+<!-- ```{r manual-alt, fig.cap = "Figure caption.", fig.alt = "Alt text."} -->
+# knitr::include_graphics("path/to/file.png")
+<!-- ``` -->
 
 Once alt text is prepared either programmatically or manually, it can be embedded in static and dynamic plot objects in R, such as `ggplot2::labs(..., alt = "[alt text]")`, 
 `shiny::renderPlot(..., alt = "[alt tex]")` [@R-shiny]. We also ask our students to provide alt text within their R Markdown chunks by using `fig.alt = "[alt text]"` `knitr` chunk option [@knitr2014], and within Pandoc-flavor/Common Markdown with `![alt text here.](path/to/file)` syntax [@macfarlanePandoc2022].
