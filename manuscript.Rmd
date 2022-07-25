@@ -207,19 +207,33 @@ g_species
 For other types of graphics that  `BrailleR` doesn’t support, we ask our students to manually create an alt text. We rely on Amy Cesal's “simple formula for writing alt text for data visualization” [@cesal] , which is as follows: “alt= _Chart type_ of _type of data_ where _reason for including chart_.” 
 She also provides a great example based on this formula: “Bar chart of gun murders per 100,000 people where America’s murder rate is 6 times worse than Canada, and 30 times Australia.” We highly recommend other instructors try out this alt text formula with their students for manual text description.
 
-<!-- ```{r manual-alt, fig.cap = "Figure caption.", fig.alt = "Alt text."} -->
-# knitr::include_graphics("path/to/file.png")
-<!-- ``` -->
+<!-- @mine -- Please add example figure with with manual alt text. -->
 
 Once alt text is prepared either programmatically or manually, it can be embedded in static and dynamic plot objects in R, such as `ggplot2::labs(..., alt = "[alt text]")`, 
 `shiny::renderPlot(..., alt = "[alt tex]")` [@R-shiny]. We also ask our students to provide alt text within their R Markdown chunks by using `fig.alt = "[alt text]"` `knitr` chunk option [@knitr2014], and within Pandoc-flavor/Common Markdown with `![alt text here.](path/to/file)` syntax [@macfarlanePandoc2022].
 
 ## Data sonification using sound
 
-Our definition of sonification refers to a data representation method using stereo sound and various audible patterns. For example, `plot(x = 1:5, y = 1:5)` can be sonified using `sonify::sonify(x = 1:5, y = 1:5)` [@R-sonify]. 
+Our definition of sonification refers to a data representation method using stereo sound and various audible patterns. For example, Figure \ref{fig:plot-xy} can be made audible by using `sonify` package [@R-sonify] via `r sonify::sonify(x = 1:5, y = 1:5)`.
 In this example, a scatter plot is represented by a sound. Position on the X axis is communicated using the left-to-right stereo effect; the pitch of the sound indicates position on the Y axis.
 
 Data sonification is very useful when representing linear patterns; however, there is much room for improvement in terms of complex data sonification as of this writing. Thus, we suggest using sonification for simple linear regression models.
+
+```{r plot-xy, fig.cap="Visualizing the relationship of two numerical variables with scatter plot.", fig.alt="Scatter plot representing the positive relationship between x and y variables.", echo=FALSE}
+# Prepare variables
+x <- 1:5
+y <- 1:5
+
+# Representing the relationship between x and y variables via plot visualization
+plot(x, y)
+```
+
+
+<!-- ```{r sonify-x-y, echo=TRUE, include=TRUE}
+# Representing the relationship between the two numerical variables via stereo sound
+library(sonify())
+sonify(x, y)
+``` -->
 
 ## Data tactualization using Swell Form machine
 
