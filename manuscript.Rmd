@@ -71,23 +71,27 @@ library(palmerpenguins)
 # Introduction
 
 According to LinkedIn's U.S. Emerging Jobs Report, data scientists rank among the top emerging jobs [-@linkedin].
-With the urgent need for training a higher number of skilled data scientists, many institutes of higher education are developing their own data science curricula. However, a consensus on what should be included in such curricula has not yet been reached. 
+With the urgent need for training a higher number of skilled data scientists, many institutes of higher education are developing their own data science curricula. 
+However, a consensus on what should be included in such curricula has not yet been reached. 
 In the latest version of *Computing Competencies for Undergraduate Data Science Curricula* by ACM Data Science Task Force, accessibility is a recommended content for the data science curricula [@danyluk2021computing].
 
 Despite the recent recommendations, accessibility has not yet found its place in data science course materials.
-One main reason for this is that accessibility is often covered in the computer sciences or the digital arts if at all covered.
-However, data science is an interdisciplinary field that is taught in various disciplines including computer science, statistics, mathematics, business schools, and digital humanities.
-Thus, the resources and conversations around accessibility have not yet extended to the broader data science education community.
+One main reason for this could be that accessibility is often covered in the computer sciences [@kawas2019teaching] or the digital arts [@barata2019inclusion] if at all covered.
+However, data science is an interdisciplinary field that is taught in various disciplines including computer science, statistics, business schools, political science, and biological sciences [@schwab2021data].
+Thus, we believe that the resources and conversations around accessibility have not yet extended to the broader data science education community at a scale that it should.
+For instance, many introductory data science courses [@yan2019first; @baumer2015data], textbooks [@adhikari2019computational; @wickham2016r], or curricula [@schwab2021data] either fail to mention accessibility at all or only focus on accessibility of data. 
 
-In this paper, we will argue that accessibility should be taught as early as the introductory course as part of the data science curriculum so that regardless of whether learners major in data science or not they can have foundational exposure to accessibility.
-As data science educators who teach accessibility as part of our lower-division courses in two different institutions, we will share specific examples as well as open-access resources that can be utilized by other data science instructors.
-We teach R [@R-base] as the main language in our courses thus our examples would be shaped around using R, however, instructors using a different set of language(s) or even teaching language-agnostic courses may still find the content applicable for their own courses.
+In this manuscript, we argue that accessibility should be taught early in the data science curriculum so that regardless of whether learners major in data science or not they can have foundational exposure to accessibility.
+As data science educators who teach accessibility as part of our lower-division courses in two different institutions, we share specific examples that can be utilized by other data science instructors.
+We teach R [@R-base] as the main language in our courses thus our examples are shaped around using R, however, instructors using a different set of language(s) or even teaching language-agnostic courses may still find the content applicable for their own courses.
+
+
+# Learning Goals
 
 Although there are various ways to represent data patterns and models, visualization has been primarily taught in many data science courses for its efficiency [@kimAccessibleVisualizationDesign2021]. 
 Such vision-dependent output may cause critical barriers against those who are blind and visually impaired, and sometimes people with learning disabilities [@kimAccessibleVisualizationDesign2021; @marriottInclusiveDataVisualization2021; @leeReachingBroaderAudiences2020]. 
 We argue that instructors need to teach multiple data representation methods so that all students of all abilities can benefit from multi-sensory data augmentation.
 
-# Learning Goals
 
 When shaping our curricular content we have considered multi data representations and their relation to accessibility. We outline the learning goals of this content in this section for different ways of representing data. 
 
