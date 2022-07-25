@@ -92,14 +92,12 @@ Both the authors teach data science in the United States thus it was a natural c
 The ADA is a civil rights law that prohibits discrimination of individuals with disabilities. 
 Regardless of their own disability status, as future data scientists, we expect our students to produce data science products that are accessible to all, not only because it is the right thing to do but also because they may have future responsibilities as data scientists to comply to ADA.
 
-
 Disabled people may rely on different types of assistive technology in their day to day life. 
 Assistive Technology is any form of technology (e.g. software, hardware) that helps people with disabilities perform certain activities.
 Examples of assistive technology include but not limited to walking sticks, wheel chairs and screen readers.
 In incorporating accessibility to our course contents, we wanted students to be familiar with assistive technologies, and since our focus has been on visual accessibility, it was a natural fit to include screen readers. 
 A screen reader is an assistive technology that supports blind or visually impaired people in using their computer by reading out the contents. 
 Screen readers are built-in Windows (Settings > Ease of Access > Narrator, and then turn on the toggle under Use Narrator) and Mac OS (System Preferences > Accessibility > Voice Over > Enable Voice Over) and can be used by students. 
-
 
 Although there are various ways to represent data patterns and models, visualization has been primarily taught in many data science courses for its efficiency [@kimAccessibleVisualizationDesign2021]. 
 Such vision-dependent output may cause critical barriers against those who are blind and visually impaired, and sometimes people with learning disabilities [@kimAccessibleVisualizationDesign2021; @marriottInclusiveDataVisualization2021; @leeReachingBroaderAudiences2020]. 
@@ -132,7 +130,7 @@ When teaching data visualizations we include three basic rules for incorporating
 We show an example of incorporating these three basic rules by using the Palmer Penguins data [@R-palmerpenguins]. 
 We visualize the relationship between flipper length and bill length of penguins and color the data points differently for each species in Figure \ref{fig:penguins-basic}.
 
-```{r penguins-basic, echo=FALSE, fig.cap="Visualization showing the relationship between flipper length (mm) and bill length (mm) of penguins for three different species of penguins", fig.alt="", warning=FALSE, fig.height=3}
+```{r penguins-basic, echo=FALSE, fig.cap="Visualization showing the relationship between flipper length (mm) and bill length (mm) of penguins for three different species of penguins", fig.alt="A scatterplot showing the relationship between flipper length in mm on the x axis and bill length in mm on the y axis. Flipper lengths vary from about 170 to 230 and bill lengths vary from about 35 to 60. Overall there is a moderate positive relationship. Each data point is colored differently for three species as Adelie, Chindtrap and Gentoo. Adelie have short flipper length and short bill length in comparison. Chinstrap have low flipper length but high bill length. Gentoo have high flipper length and high bill length. Data points are in red, green, and blue for Adelie, Chinstrap and Gentoo penguins respectively.", warning=FALSE, fig.height=3}
 library(ggplot2) # It seems like the pkg chunk is not loading packages. I did not want to make changes there since I do not know what your intention was.
 library(palmerpenguins)
 fig <- ggplot(penguins, aes(flipper_length_mm, bill_length_mm, color = species)) +
@@ -150,19 +148,19 @@ fig
 The `colorblindr` package [@R-colorblindr] provides a set of functions that can be useful in teaching and practising color blindness accessibility. 
 For instance, `colorblindr::cvd_grid()` function provides color-deficiency simulations of a given plot. 
 In the code chunk below the plot is named as `fig`. 
-The code creates a grid of four plots where each plot shows a different color vision deficiency.
-This grid allows those without any color vision deficiencies experience what data visualizations would look like to a sighted person that does have color blindness. 
+The code creates a grid of four plots where each plot shows a different color vision deficiency including deutanomly, protanomly, tritanomly, and desaturated.
+This grid allows those without any color vision deficiencies experience what data visualizations would look like to a sighted person that has color blindness. 
 
-```{r penguins-cvd, echo=FALSE, fig.cap="", fig.alt="", warning=FALSE}
+```{r penguins-cvd, echo=FALSE, fig.cap="Color Blindness Simulation with colorblindr", fig.alt="A 2 by 2 grid of four scatterplots. The scatterplots are the same as the scatterplot in the previous figure except for colors. From left to right and top to bottom the plots read deutanomly, protanomly, tritanomly, and desaturated", warning=FALSE, echo=TRUE}
 colorblindr::cvd_grid(fig)
 ```
 
 For their data visualizations, instead of relying on the default color selection of R packages, students are introduced to the Okabe-Ito color palette which is known to be accessible to people with color vision deficiencies [@okabe]. 
 One can find specific colors in the pallette by the R code `palette.colors(palette = "Okabe-Ito")`.
 In addition, students can be introduced to `colorblindr::scale_color_OkabeIto()` and `colorblindr::scale_fill_OkabeIto()` to automatically switch to using this color pallette by adding a layer to a ggplot presentation. 
-For instance, the plot in Figure \ref{fig:penguins-basic} can be switched to Okabe-Ito color pallette as shown in Figure \ref{fig:penguins-okabe-ito} by using the code below.
+For instance, the plot in Figure \ref{fig:penguins-basic} can be switched to Okabe-Ito color pallette as shown in Figure \ref{fig:penguins-okabe} by using the code below.
 
-```{r penguins-okabe-ito, fig.cap="", fig.alt="", warning=FALSE, fig.height=3}
+```{r penguins-okabe, fig.cap="Scatterplot Using Okabe-Ito Color Pallette", fig.alt="The scatterplots are the same as the scatterplot in the original penguins plot except for colors. Data points are in orange, sky blue, and bluish green for Adelie, Chinstrap and Gentoo penguins respectively.", warning=FALSE, fig.height=3, echo=TRUE}
 fig + colorblindr::scale_color_OkabeIto()
 ```
 
