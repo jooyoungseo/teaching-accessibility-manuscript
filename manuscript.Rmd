@@ -86,25 +86,48 @@ As data science educators who teach accessibility as part of our lower-division 
 We teach R [@R-base] as the main language in our courses thus our examples are shaped around using R, however, instructors using a different set of language(s) or even teaching language-agnostic courses may still find the content applicable for their own courses.
 
 
-# Learning Goals
+# Learning Goals and Objectives
+
+Both the authors teach data science in the United States thus it was a natural choice for us to make students aware of the Americans with Disabilities Act (ADA). 
+The ADA is a civil rights law that prohibits discrimination of individuals with disabilities. 
+Regardless of their own disability status, as future data scientists, we expect our students to produce data science products that are accessible to all, not only because it is the right thing to do but also because they may have future responsibilities as data scientists to comply to ADA.
+
+
+Disabled people may rely on different types of assistive technology in their day to day life. 
+Assistive Technology is any form of technology (e.g. software, hardware) that helps people with disabilities perform certain activities.
+Examples of assistive technology include but not limited to walking sticks, wheel chairs and screen readers.
+In incorporating accessibility to our course contents, we wanted students to be familiar with assistive technologies, and since our focus has been on visual accessibility, it was a natural fit to include screen readers. 
+A screen reader is an assistive technology that supports blind or visually impaired people in using their computer by reading out the contents. 
+Screen readers are built-in Windows (Settings > Ease of Access > Narrator, and then turn on the toggle under Use Narrator) and Mac OS (System Preferences > Accessibility > Voice Over > Enable Voice Over) and can be used by students. 
+
 
 Although there are various ways to represent data patterns and models, visualization has been primarily taught in many data science courses for its efficiency [@kimAccessibleVisualizationDesign2021]. 
 Such vision-dependent output may cause critical barriers against those who are blind and visually impaired, and sometimes people with learning disabilities [@kimAccessibleVisualizationDesign2021; @marriottInclusiveDataVisualization2021; @leeReachingBroaderAudiences2020]. 
 We argue that instructors need to teach multiple data representation methods so that all students of all abilities can benefit from multi-sensory data augmentation.
+When shaping our curricular content we have considered multi data representations and their relation to accessibility. 
 
 
-When shaping our curricular content we have considered multi data representations and their relation to accessibility. We outline the learning goals of this content in this section for different ways of representing data. 
+In summary, our curricular goal has been to ensure that the current and the next generation of data scientists, provide public-facing outputs (websites, analysis reports, etc.) that are visually accessible. 
+For this goal, we set three specific learning objectives as follows. Students should
+
+1. get familiar with Americans with Disabilities Act;
+2. use at least one assistive technology (i.e. screen reader);
+3. consider different representations of data.
+
+It is important to note that the first two objectives are not data science specific but are related to accessibility in the broader scale. 
+The third objective, however, is data science specific. 
+In the rest of the section we focus on teaching different representations of data further.
 
 ## Data Visualization
 
-Data visualization is the most common representation of data and it is covered in many introductory data science curricula and textbooks <!--Mine will add citations-->.
+Data visualization is the most common representation of data.
 Despite their use by many, data visualizations are not accessible to all. 
 Colors are an important part of data visualizations and an aspect that can limit accessibility for color blind people. 
 When teaching data visualizations we include three basic rules for incorporating colors into data visualization. Students should be able to
 
 1. simulate color blindness (if they are sighted and not color blind);
-2. pick color blind friendly colors.
-3. not only rely on color for differentiating data;
+2. pick color blind friendly colors;
+3. not only rely on color for differentiating data.
 
 We show an example of incorporating these three basic rules by using the Palmer Penguins data [@R-palmerpenguins]. 
 We visualize the relationship between flipper length and bill length of penguins and color the data points differently for each species in Figure \ref{fig:penguins-basic}.
