@@ -102,9 +102,8 @@ When teaching data visualizations we include three basic rules for incorporating
 2. pick color blind friendly colors.
 3. not only rely on color for differentiating data;
 
-We show an example of incorporating these three basic rules by using the Palmer Penguins data <!--Mine will cite this-->. 
+We show an example of incorporating these three basic rules by using the Palmer Penguins data [@R-palmerpenguins]. 
 We visualize the relationship between flipper length and bill length of penguins and color the data points differently for each species in Figure \ref{fig:penguins-basic}.
-
 
 ```{r penguins-basic, echo=FALSE, fig.cap="Visualization showing the relationship between flipper length (mm) and bill length (mm) of penguins for three different species of penguins", fig.alt="", warning=FALSE, fig.height=3}
 library(ggplot2) # It seems like the pkg chunk is not loading packages. I did not want to make changes there since I do not know what your intention was.
@@ -122,7 +121,7 @@ fig
 ```
 
 The `colorblindr` package [@R-colorblindr] provides a set of functions that can be useful in teaching and practising color blindness accessibility. 
-For instance, `cvd_grid()` function provides color-deficiency simulations of a given plot. 
+For instance, `colorblindr::cvd_grid()` function provides color-deficiency simulations of a given plot. 
 In the code chunk below the plot is named as `fig`. 
 The code creates a grid of four plots where each plot shows a different color vision deficiency.
 This grid allows those without any color vision deficiencies experience what data visualizations would look like to a sighted person that does have color blindness. 
