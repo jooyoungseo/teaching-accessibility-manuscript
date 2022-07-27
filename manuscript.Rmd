@@ -214,7 +214,7 @@ Once alt text is prepared either programmatically or manually, it can be embedde
 
 ## Data sonification using sound
 
-Our definition of sonification refers to a data representation method using stereo sound and various audible patterns. For example, Figure \ref{fig:plot-xy} can be made audible by using `sonify` package [@R-sonify] like below (audio file is available at https://xxx.github.io/xx/audio/sonify-example.wav).
+Our definition of sonification refers to a data representation method using stereo sound and various audible patterns. For example, Figure \ref{fig:plot-xy} can be made audible by using `sonify` package [@R-sonify] like below (audio file is available at \url{\audio{}}).
 
 ```{r sonify-x-y, echo=TRUE, include=TRUE, cache=TRUE}
 # Representing the relationship between the two numerical variables via stereo sound
@@ -293,7 +293,7 @@ We firmly believe that an accessible future in the field of data science require
 We also acknowledge that what we have presented here is only a small portion of the intersection of visual accessibility and data science. 
 The second co-author was supported through a Teach Access grant to develop curricular materials on teaching accessibility as part of the data science curriculum. 
 Educators interested in teaching accessibility can follow the organization's work at https://teachaccess.org/. 
-The source code of this manuscript can be found on a \href{\repo{}}{GitHub repository}^[The GitHub repository can be found at \url{\repo{}}]
+The source code of this manuscript can be found on a GitHub repository at \url{\repo{}}.
 
 # References {-}
 
