@@ -240,7 +240,23 @@ sonify(x, y)
 Data tactulization refers to making data visualization in a tactile form so that it can be touchable by fingers. 
 Although this requires some expensive embossing hardware (e.g., braille embosser or Swell Form Heating Machine), this may be one of the most effective and accessible data representations for those who are blind or visually impaired. 
 One of the authors in this paper, developed a simple R package, called `tactileR` [@R-tactileR] that can generate a ready-to-emboss pdf file from R graphics and ggplot objects. 
-Students and instructors can produce their own tactile graphics by using the following functions: `tactileR::brl_begin()`; [their graphic object]; `tactileR::brl_end()`.
+Students and instructors can produce their own tactile graphics by using the following functions: `tactileR::brl_begin()`; [their graphic object]; `tactileR::brl_end()` (see Figure \ref{fig:tactile-example}).
+
+```{r tactile-producing-code, echo=TRUE, include=TRUE}
+library(palmerpenguins)
+library(tactileR)
+
+brl_begin("figure/tactile-boxplot.pdf")
+with(
+  penguins,
+  boxplot(body_mass_g ~ species)
+)
+brl_end()
+```
+
+```{r tactile-example, fig.cap="Ready-to-print tactile graph in braille.", fig.alt="Boxplot showing the different body mass between penguins species"}
+knitr::include_graphics("figure/tactile-boxplot.pdf")
+```
 
 # Delivery of Content
 
