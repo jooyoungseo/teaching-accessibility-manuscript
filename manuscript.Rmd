@@ -214,7 +214,19 @@ Once alt text is prepared either programmatically or manually, it can be embedde
 
 ## Data sonification using sound
 
-Our definition of sonification refers to a data representation method using stereo sound and various audible patterns. For example, Figure \ref{fig:plot-xy} can be made audible by using `sonify` package [@R-sonify] via `r sonify::sonify(x = 1:5, y = 1:5)`.
+Our definition of sonification refers to a data representation method using stereo sound and various audible patterns. For example, Figure \ref{fig:plot-xy} can be made audible by using `sonify` package [@R-sonify] like below.
+
+```{r sonify-x-y, echo=TRUE, include=TRUE, cache=TRUE}
+# Representing the relationship between the two numerical variables via stereo sound
+library(sonify())
+
+# Prepare variables
+x <- 1:5
+y <- 1:5
+
+sonify(x, y)
+```
+
 In this example, a scatter plot is represented by a sound. Position on the X axis is communicated using the left-to-right stereo effect; the pitch of the sound indicates position on the Y axis.
 
 Data sonification is very useful when representing linear patterns; however, there is much room for improvement in terms of complex data sonification as of this writing. Thus, we suggest using sonification for simple linear regression models.
@@ -228,13 +240,6 @@ y <- 1:5
 plot(x, y)
 ```
 
-
-<!-- ```{r sonify-x-y, echo=TRUE, include=TRUE}
-# Representing the relationship between the two numerical variables via stereo sound
-library(sonify())
-sonify(x, y)
-``` -->
-
 ## Data tactualization using Swell Form machine
 
 Data tactulization refers to making data visualization in a tactile form so that it can be touchable by fingers. 
@@ -242,7 +247,7 @@ Although this requires some expensive embossing hardware (e.g., braille embosser
 One of the authors in this paper, developed a simple R package, called `tactileR` [@R-tactileR] that can generate a ready-to-emboss pdf file from R graphics and ggplot objects. 
 Students and instructors can produce their own tactile graphics by using the following functions: `tactileR::brl_begin()`; [their graphic object]; `tactileR::brl_end()` (see Figure \ref{fig:tactile-example}).
 
-```{r tactile-producing-code, echo=TRUE, include=TRUE}
+```{r tactile-producing-code, echo=TRUE, include=TRUE, cache=TRUE}
 library(palmerpenguins)
 library(tactileR)
 
@@ -254,7 +259,7 @@ with(
 brl_end()
 ```
 
-```{r tactile-example, fig.cap="Ready-to-print tactile graph in braille.", fig.alt="Boxplot showing the different body mass between penguins species"}
+```{r tactile-example, echo=FALSE, warning=FALSE, message=FALSE, cache=TRUE, dependson="tactile-producing-code", fig.cap="Ready-to-print tactile graph in braille.", fig.alt="Boxplot showing the different body mass between penguins species"}
 knitr::include_graphics("figure/tactile-boxplot.pdf")
 ```
 
