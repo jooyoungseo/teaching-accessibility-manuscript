@@ -210,7 +210,7 @@ Once alt text is prepared either programmatically or manually, it can be embedde
 
 ## Data sonification using sound
 
-Our definition of sonification refers to a data representation method using stereo sound and various audible patterns. For example, Figure \ref{fig:plot-xy} can be made audible by using `sonify` package [@R-sonify] like below (audio file is available at \url{\audio{}}).
+Our definition of sonification refers to a data representation method using stereo sound and various audible patterns. For example, Figure \ref{fig:plot-xy} can be made audible by using `sonify` package [@R-sonify] like below. The output is an audio which can also be accesses as an  audio file  at \url{\audio{}}.
 
 ```{r sonify-x-y, echo=TRUE, include=TRUE, cache=TRUE}
 # Representing the relationship between the two numerical variables via stereo sound
@@ -240,13 +240,14 @@ plot(x, y)
 
 Data tactulization refers to making data visualization in a tactile form so that it can be touchable by fingers. 
 Although this requires some expensive embossing hardware (e.g., braille embosser or Swell Form Heating Machine), this may be one of the most effective and accessible data representations for those who are blind or visually impaired. 
-One of the authors in this paper, developed a simple R package, called `tactileR` [@R-tactileR] that can generate a ready-to-emboss pdf file from R graphics and ggplot objects. 
-Students and instructors can produce their own tactile graphics by using the following functions: `tactileR::brl_begin()`; [their graphic object]; `tactileR::brl_end()` (see Figure \ref{fig:tactile-example}).
+The `tactileR` [@R-tactileR] package in R can generate a ready-to-emboss pdf file from R graphics and ggplot objects. 
+Students and instructors can produce their own tactile graphics by using the following functions: `tactileR::brl_begin()`; [their graphic object]; `tactileR::brl_end()` (see Figure \ref{fig:tactile-example}). 
+For those who do not have access to embossing hardware, the learning process on tactualization can be supported with a video that shows the process of printing a tactile graph available at \url{\video{}}.
 
 
-<!--added eval=FALSE to the chunk below because the output and messages were irrelevant-->
 
-```{r tactile-producing-code, echo=TRUE, include=TRUE, cache=TRUE, eval=FALSE}
+
+```{r tactile-producing-code, echo=TRUE, include=TRUE, cache=TRUE, message=FALSE, results='hide'}
 
 library(palmerpenguins)
 library(tactileR)
@@ -256,9 +257,7 @@ with(penguins, boxplot(body_mass_g ~ species))
 brl_end()
 ```
 
-```{r echo=FALSE}
-library(tactileR)
-```
+
 
 
 ```{r tactile-example, echo=FALSE, warning=FALSE, message=FALSE, cache=TRUE, dependson="tactile-producing-code", fig.cap="Ready-to-print tactile graph in braille.", fig.alt="Boxplot showing the different body mass between penguins species", , fig.align = "center", out.height="50%"}
