@@ -227,7 +227,7 @@ In this example, a scatter plot is represented by a sound. Position on the X axi
 
 Data sonification is very useful when representing linear patterns; however, there is much room for improvement in terms of complex data sonification as of this writing. Thus, we suggest using sonification for simple linear regression models.
 
-```{r plot-xy, fig.cap="Visualizing the relationship of two numerical variables with scatter plot.", fig.alt="Scatter plot representing the positive relationship between x and y variables.", echo=FALSE, fig.height=3}
+```{r plot-xy, fig.cap="Visualizing the relationship of two numerical variables with scatter plot.", fig.alt="Scatter plot representing the positive relationship between x and y variables.", echo=FALSE, fig.height=5}
 # Prepare variables
 x <- 1:5
 y <- 1:5
@@ -243,19 +243,25 @@ Although this requires some expensive embossing hardware (e.g., braille embosser
 One of the authors in this paper, developed a simple R package, called `tactileR` [@R-tactileR] that can generate a ready-to-emboss pdf file from R graphics and ggplot objects. 
 Students and instructors can produce their own tactile graphics by using the following functions: `tactileR::brl_begin()`; [their graphic object]; `tactileR::brl_end()` (see Figure \ref{fig:tactile-example}).
 
-```{r tactile-producing-code, echo=TRUE, include=TRUE, cache=TRUE}
+
+<!--added eval=FALSE to the chunk below because the output and messages were irrelevant-->
+
+```{r tactile-producing-code, echo=TRUE, include=TRUE, cache=TRUE, eval=FALSE}
+
 library(palmerpenguins)
 library(tactileR)
 
-brl_begin("figure/tactile-boxplot.pdf")
-with(
-  penguins,
-  boxplot(body_mass_g ~ species)
-)
+brl_begin("tactile-boxplot.pdf")
+with(penguins, boxplot(body_mass_g ~ species))
 brl_end()
 ```
 
-```{r tactile-example, echo=FALSE, warning=FALSE, message=FALSE, cache=TRUE, dependson="tactile-producing-code", fig.cap="Ready-to-print tactile graph in braille.", fig.alt="Boxplot showing the different body mass between penguins species"}
+```{r echo=FALSE}
+library(tactileR)
+```
+
+
+```{r tactile-example, echo=FALSE, warning=FALSE, message=FALSE, cache=TRUE, dependson="tactile-producing-code", fig.cap="Ready-to-print tactile graph in braille.", fig.alt="Boxplot showing the different body mass between penguins species", , fig.align = "center", out.height="50%"}
 knitr::include_graphics("figure/tactile-boxplot.pdf")
 ```
 
