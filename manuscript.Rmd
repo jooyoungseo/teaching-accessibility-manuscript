@@ -88,33 +88,32 @@ We teach R [@R-base] as the main language in our courses thus our examples are s
 
 # Learning Goals and Objectives
 
-Both the authors teach data science in the United States thus it was a natural choice for us to make students aware of the Americans with Disabilities Act (ADA). 
+Although there are various ways to represent data patterns and models, visualization has been primarily taught in many data science courses for its efficiency [@kimAccessibleVisualizationDesign2021]. 
+Such vision-dependent output may cause critical barriers against those who are blind and visually impaired, and sometimes people with learning disabilities [@kimAccessibleVisualizationDesign2021; @marriottInclusiveDataVisualization2021; @leeReachingBroaderAudiences2020]. 
+We argue that instructors need to teach multiple data representation methods so that all students of all abilities can benefit from multi-sensory data augmentation. To this end, we have considered multi data representations and their relation to accessibility in our courses, and that's what we will demonstrate throughout this paper.
+
+In incorporating accessibility to our course contents, we also wanted our students to be familiar with assistive technologies, and since our focus has been on visual accessibility, it was a natural fit to include screen readers. 
+Screen reader is an assistive technology that supports blind or visually impaired people in using their computer by reading aloud the contents. Recently, screen reader is provided as one of the built-in accessibility features on operating systems, such as Windows Narrator and Apple's VoiceOver.
+
+However, we also want to make our teaching as inclusive as possible to other types of dis/abilities so that we are not just confined with issues of visual disabilities.
+
+Therefore, our curricular goal is to broadly ensure that the current and the next generation of data scientists, provide public-facing outputs, including websites and analysis reports, in accessible forms and representations for people with diverse abilities. To achieve this goal, we set three specific and minimal learning objectives like below.
+
+Students should:
+
+1. get familiar with Americans with Disabilities Act;
+2. use at least one assistive technology;
+3. consider different representations of data.
+
+The first objective provides our students with a chance to not just learn legislative concepts, but empathy building concerning diversity issue. As both the authors teach data science in the United States, it was a natural choice for us to make students aware of the Americans with Disabilities Act (ADA). 
 The ADA is a civil rights law that prohibits discrimination of individuals with disabilities. 
 Regardless of their own disability status, as future data scientists, we expect our students to produce data science products that are accessible to all, not only because it is the right thing to do but also because they may have future responsibilities as data scientists to comply to ADA.
 
-Disabled people may rely on different types of assistive technology in their day to day life. 
-Assistive Technology is any form of technology (e.g. software, hardware) that helps people with disabilities perform certain activities.
-Examples of assistive technology include but not limited to walking sticks, wheel chairs and screen readers.
-In incorporating accessibility to our course contents, we wanted students to be familiar with assistive technologies, and since our focus has been on visual accessibility, it was a natural fit to include screen readers. 
-A screen reader is an assistive technology that supports blind or visually impaired people in using their computer by reading out the contents. 
-Screen readers are built-in Windows (Settings > Ease of Access > Narrator, and then turn on the toggle under Use Narrator) and Mac OS (System Preferences > Accessibility > Voice Over > Enable Voice Over) and can be used by students. 
-
-Although there are various ways to represent data patterns and models, visualization has been primarily taught in many data science courses for its efficiency [@kimAccessibleVisualizationDesign2021]. 
-Such vision-dependent output may cause critical barriers against those who are blind and visually impaired, and sometimes people with learning disabilities [@kimAccessibleVisualizationDesign2021; @marriottInclusiveDataVisualization2021; @leeReachingBroaderAudiences2020]. 
-We argue that instructors need to teach multiple data representation methods so that all students of all abilities can benefit from multi-sensory data augmentation.
-When shaping our curricular content we have considered multi data representations and their relation to accessibility. 
-
-
-In summary, our curricular goal has been to ensure that the current and the next generation of data scientists, provide public-facing outputs (websites, analysis reports, etc.) that are visually accessible. 
-For this goal, we set three specific learning objectives as follows. Students should
-
-1. get familiar with Americans with Disabilities Act;
-2. use at least one assistive technology (i.e. screen reader);
-3. consider different representations of data.
+The second learning objective echoes our argument on accessible data representation beyond one-type modality. People with disabilities may rely on different types of assistive technology in their day to day life. 
+Assistive Technology is any form of technology (e.g., software, hardware) that helps people with disabilities perform certain activities. Examples of assistive technology include but not limited to walking sticks, wheel chairs and screen readers. As we noted above, we introduced screen reader as one of these examples when our students were working on data visualization project; however, we acknowledge that various assistive technologies, such as speech recognition and video captioning, could be integrated into data science courses in diverse contexts (e.g., data collection and data presentation contexts).
 
 It is important to note that the first two objectives are not data science specific but are related to accessibility in the broader scale. 
-The third objective, however, is data science specific. 
-In the rest of the section we focus on teaching different representations of data further.
+The third objective, however, is data science specific. In the remaining section of this paper, we will further focus on the third objective by illustrating how we have taught multiple data representations.
 
 ## Data Visualization
 
@@ -165,7 +164,6 @@ For instance, the plot in Figure \ref{fig:penguins-basic} can be switched to Oka
 fig + colorblindr::scale_color_OkabeIto()
 ```
 
-
 Last but not least, students should learn not to rely only on color to differentiate data points, in this case Species. 
 For instance, they can be introduced to shapes and have data points that are circle, triangle, square for each species. 
 This can also be extended to line graphs as having continuous or dashed lines.
@@ -181,11 +179,9 @@ Our focus here is on visual accessibility but it is worth noting that all subdom
 
 Our definition of "data verbalization" refers to a way of representing data patterns using verbal description with alternative text (i.e., alt text). 
 Images without alt text markup are not readily accessible to assistive technologies (i.e., screen readers; refreshable braille displays; text-based voice commands) and web search parsers. 
-However, appropriately designed alt text can not only give assistive technology users minimum access to visualized data, but also provide all students with a much richer context<!--jy will cite-->.
+However, appropriately designed alt text can not only give assistive technology users minimum access to visualized data, but also provide all students with a much richer context [@lundgardAccessibleVisualizationNatural2022].
 
-There are two ways to create alt text: (1) auto-generated alt text; and (2) manual alt text.
-
-Currently, `BrailleR::VI()` [@R-BrailleR] function has a capability to auto-generate alt text for basic R graphics and ggplot objects (see Figure \ref{fig:VI-example}). 
+There are two ways to create alt text: (1) auto-generated alt text; and (2) manual alt text. Currently, `BrailleR::VI()` [@R-BrailleR] function has a capability to auto-generate alt text for basic R graphics and ggplot objects (see Figure \ref{fig:VI-example}). 
 Supported graphic types include as follows: `graphics::hist()`, `graphics::boxplot()`, `ggplot2::geom_bar()`, `ggplot2::geom_histogram()`, and `ggplot2::geom_boxplot()`.
 
 ```{r VI-example, fig.cap = "Automatic data verbalization.", fig.alt = "Bar chart of penguins species with its verbal description automatically generated by `BrailleR::VI()` function.", echo=TRUE, include=TRUE, warning=FALSE, cache=TRUE}
