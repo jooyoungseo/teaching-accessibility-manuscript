@@ -210,7 +210,6 @@ We rely on Cesal's “simple formula for writing alt text for data visualization
 She also recommends inclusion of a link to data somewhere within text. 
 Similarly, for a meaningful alternate text, @canelon suggest that the description conveys the meaning the data, variables are included on the axes, scale and type of plot are desribed. 
 
-
 Given these recommendations, we provide the alternate text we wrote for Figure  \ref{fig:penguins-basic}. "Sample scatterplot showing the relationship between flipper length in mm on the x axis and bill length in mm on the y axis. Flipper lengths vary from about 170 to 230 and bill lengths vary from about 35 to 60. Overall there is a moderate positive relationship. Each data point is colored differently for three species as Adelie, Chindtrap and Gentoo. Adelie have short flipper length and short bill length in comparison. Chinstrap have low flipper length but high bill length. Gentoo have high flipper length and high bill length. Data points are in red, green, and blue for Adelie, Chinstrap and Gentoo penguins respectively." 
 Note that we specify colors as they would be relevant as readers switch from Figure  \ref{fig:penguins-basic} to Figure  \ref{fig:penguins-okabe}.
 
