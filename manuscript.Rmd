@@ -130,7 +130,7 @@ When teaching data visualizations we include three basic rules for incorporating
 We show an example of incorporating these three basic rules by using the Palmer Penguins data [@R-palmerpenguins]. 
 We visualize the relationship between flipper length and bill length of penguins and color the data points differently for each species in Figure \ref{fig:penguins-basic}.
 
-```{r penguins-basic, echo=FALSE, fig.cap="Visualization showing the relationship between flipper length (mm) and bill length (mm) of penguins for three different species of penguins", fig.alt="A scatterplot showing the relationship between flipper length in mm on the x axis and bill length in mm on the y axis. Flipper lengths vary from about 170 to 230 and bill lengths vary from about 35 to 60. Overall there is a moderate positive relationship. Each data point is colored differently for three species as Adelie, Chindtrap and Gentoo. Adelie have short flipper length and short bill length in comparison. Chinstrap have low flipper length but high bill length. Gentoo have high flipper length and high bill length. Data points are in red, green, and blue for Adelie, Chinstrap and Gentoo penguins respectively.", warning=FALSE, fig.height=3}
+```{r penguins-basic, echo=FALSE, fig.cap="Sample scatterplot showing the relationship between flipper length (mm) and bill length (mm) of penguins for three different species of penguins", fig.alt="Sample scatterplot showing the relationship between flipper length in mm on the x axis and bill length in mm on the y axis. Flipper lengths vary from about 170 to 230 and bill lengths vary from about 35 to 60. Overall there is a moderate positive relationship. Each data point is colored differently for three species as Adelie, Chindtrap and Gentoo. Adelie have short flipper length and short bill length in comparison. Chinstrap have low flipper length but high bill length. Gentoo have high flipper length and high bill length. Data points are in red, green, and blue for Adelie, Chinstrap and Gentoo penguins respectively.", warning=FALSE, fig.height=3}
 library(ggplot2) # It seems like the pkg chunk is not loading packages. I did not want to make changes there since I do not know what your intention was.
 library(palmerpenguins)
 
@@ -152,7 +152,7 @@ In the code chunk below the plot is named as `fig`.
 The code creates a grid of four plots where each plot shows a different color vision deficiency including deutanomly, protanomly, tritanomly, and desaturated.
 This grid allows those without any color vision deficiencies experience what data visualizations would look like to a sighted person that has color blindness. 
 
-```{r penguins-cvd, echo=FALSE, fig.cap="Color Blindness Simulation with colorblindr", fig.alt="A 2 by 2 grid of four scatterplots. The scatterplots are the same as the scatterplot in the previous figure except for colors. From left to right and top to bottom the plots read deutanomly, protanomly, tritanomly, and desaturated", warning=FALSE, echo=TRUE}
+```{r penguins-cvd, echo=FALSE, fig.cap="Color Blindness Simulation with colorblindr", fig.alt="A 2 by 2 grid of four scatterplots. The scatterplots are the same as the scatterplot in the previous figure except for colors. From left to right and top to bottom the plots read deutanomly, protanomly, tritanomly, and desaturated". The deutanomly plot shows two sets of points that are close to brownish green and one set of points that are violet. The protanomly plot is similar in colors, one of the brownish green is closer to gray. In the tritanomly plot, it is difficult to distinguish the green/blue colors. There is also a pink color that stands out. In the desaturated plot all the points are gray and the different species are indistinguishable., warning=FALSE, echo=TRUE}
 colorblindr::cvd_grid(fig)
 ```
 
@@ -201,10 +201,16 @@ g_species
 # BrailleR::VI(g_species)
 ```
 
-For other types of graphics that  `BrailleR` doesn’t support, we ask our students to manually create an alt text. We rely on Amy Cesal's “simple formula for writing alt text for data visualization” [@cesal] , which is as follows: “alt= _Chart type_ of _type of data_ where _reason for including chart_.” 
-She also provides a great example based on this formula: “Bar chart of gun murders per 100,000 people where America’s murder rate is 6 times worse than Canada, and 30 times Australia.” We highly recommend other instructors try out this alt text formula with their students for manual text description.
+Even though, automated alternate text has some use with its limitations, it does not often directly convey the message a visualization is displaying.
+Thus, it is important to write alternate text manually and teach students how to write one.
+We rely on Cesal's “simple formula for writing alt text for data visualization” [-@cesal] , which is as follows: “alt= _Chart type_ of _type of data_ where _reason for including chart_.” 
+She also recommends inclusion of a link to data somewhere within text. 
+Similarly, for a meaningful alternate text, @canelon suggest that the description conveys the meaning the data, variables are included on the axes, scale and type of plot are desribed. 
 
-<!-- @mine -- Please add example figure with with manual alt text. -->
+
+Given these recommendations, we provide the alternate text we wrote for Figure  \ref{fig:penguins-basic}. "Sample scatterplot showing the relationship between flipper length in mm on the x axis and bill length in mm on the y axis. Flipper lengths vary from about 170 to 230 and bill lengths vary from about 35 to 60. Overall there is a moderate positive relationship. Each data point is colored differently for three species as Adelie, Chindtrap and Gentoo. Adelie have short flipper length and short bill length in comparison. Chinstrap have low flipper length but high bill length. Gentoo have high flipper length and high bill length. Data points are in red, green, and blue for Adelie, Chinstrap and Gentoo penguins respectively." 
+Note that we specify colors as they would be relevant as readers switch from Figure  \ref{fig:penguins-basic} to Figure  \ref{fig:penguins-okabe}.
+
 
 Once alt text is prepared either programmatically or manually, it can be embedded in static and dynamic plot objects in R, such as `ggplot2::labs(..., alt = "[alt text]")`, 
 `shiny::renderPlot(..., alt = "[alt tex]")` [@R-shiny]. We also ask our students to provide alt text within their R Markdown chunks by using `fig.alt = "[alt text]"` `knitr` chunk option [@knitr2014], and within Pandoc-flavor/Common Markdown with `![alt text here.](path/to/file)` syntax [@macfarlanePandoc2022].
@@ -228,7 +234,7 @@ In this example, a scatter plot is represented by a sound. Position on the X axi
 
 Data sonification is very useful when representing linear patterns; however, there is much room for improvement in terms of complex data sonification as of this writing. Thus, we suggest using sonification for simple linear regression models.
 
-```{r plot-xy, fig.cap="Visualizing the relationship of two numerical variables with scatter plot.", fig.alt="Scatter plot representing the positive relationship between x and y variables.", echo=FALSE, fig.height=5}
+```{r plot-xy, fig.cap="Visualizing the relationship of two numerical variables with scatter plot.", fig.alt="Scatter plot representing the positive relationship between x and y variables. There are five points on the plot at x,y values as 1,1 - 2,2 - 3,3 - 4,4 - 5,5", echo=FALSE, fig.height=5}
 # Prepare variables
 x <- 1:5
 y <- 1:5
@@ -261,7 +267,7 @@ brl_end()
 
 
 
-```{r tactile-example, echo=FALSE, warning=FALSE, message=FALSE, cache=TRUE, dependson="tactile-producing-code", fig.cap="Ready-to-print tactile graph in braille.", fig.alt="Boxplot showing the different body mass between penguins species", , fig.align = "center", out.height="50%"}
+```{r tactile-example, echo=FALSE, warning=FALSE, message=FALSE, cache=TRUE, dependson="tactile-producing-code", fig.cap="Ready-to-print tactile graph in braille.", fig.alt="Boxplot showing the different body mass between penguins species. The plot has three boxes for each Penguin species. On the x and y-axes, labels and values are displayed in braille.", , fig.align = "center", out.height="50%"}
 knitr::include_graphics("figure/tactile-boxplot.pdf")
 ```
 
