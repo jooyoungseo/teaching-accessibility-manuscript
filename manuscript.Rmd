@@ -258,7 +258,6 @@ For those who do not have access to embossing hardware, the learning process on 
 
 
 ```{r tactile-producing-code, echo=TRUE, include=TRUE, cache=TRUE, message=FALSE, results='hide'}
-
 library(palmerpenguins)
 library(tactileR)
 
