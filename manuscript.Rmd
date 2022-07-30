@@ -76,7 +76,12 @@ library(palmerpenguins)
 According to LinkedIn's U.S. Emerging Jobs Report, data scientists rank among the top emerging jobs [-@linkedin].
 With the urgent need for training a higher number of skilled data scientists, many institutes of higher education are developing their own data science curricula. 
 However, a consensus on what should be included in such curricula has not yet been reached. 
-In the latest version of *Computing Competencies for Undergraduate Data Science Curricula* by ACM Data Science Task Force, accessibility is a recommended content for the data science curricula [@danyluk2021computing].
+One set of guidelines is written by the ACM Data Science Task Force is the  *Computing Competencies for Undergraduate Data Science Curricula*. In this report, accessibility is a "foundational consideration" at the knowledge level when it comes to displaying data [@danyluk2021computing]. 
+
+Training on accessibility is also an important job-readiness aspect of curriculum design. 
+The Partnership on Employment & Accessible Technology (PEAT) states in their Accessible Technology Skills Gap Report [-@peat] that 84% of industry correspondents that they work with say "it is important or very important for them to hire developers and designers with accessible technology skills".
+Even though this statistic maybe different specifically for data scientists, the data science field is broad with intersection in careers as developers (e.g. data dashboard developers) and designers (e.g. data visualization experts). 
+The PEAT also state that 60% of industry respondents "it was difficult or very difficult for their organization to find job candidates with accessibility skills".
 
 Despite the recent recommendations, accessibility from disabilities perspectives has not yet found its place in data science course materials.
 One main reason for this could be that accessibility is often covered in the computer sciences [@kawas2019teaching] or the digital arts [@barata2019inclusion] if at all covered.
