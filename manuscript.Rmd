@@ -265,7 +265,7 @@ For those who do not have access to embossing hardware, the learning process on 
 library(palmerpenguins)
 library(tactileR)
 
-brl_begin("tactile-boxplot.pdf")
+brl_begin("figure/tactile-boxplot.pdf")
 with(penguins, boxplot(body_mass_g ~ species))
 brl_end()
 ```
