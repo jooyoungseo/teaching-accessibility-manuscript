@@ -1,6 +1,6 @@
 ---
 title: |
-  Teaching Visual Accessibility in the Introductory Data Science Classes: Why, What, When, and How
+  Teaching Visual Accessibility in Introductory Data Science Classes with Multi-Modal Data Representations
 shorttitle: Teaching Accessibility in Data Science # nolint # nolint
 author:
 - name: JooYoung Seo
