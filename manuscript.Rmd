@@ -12,7 +12,7 @@ author:
 
 affiliation:
 - id: 1
-  institution: "School of Information Sciences, University of Illinois Urbana-Champaign, 614 E. Daniel St. Urbana-Champaign, IL, USA"
+  institution: "School of Information Sciences, University of Illinois Urbana-Champaign, 614 E. Daniel St., Champaign, IL 61820, USA"
 - id: 2
   institution: "Department of Statistical Science, University College London"
 - id: 3
