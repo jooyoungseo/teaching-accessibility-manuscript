@@ -1,0 +1,174 @@
+\begin{thebibliography}{xx}
+
+\harvarditem[Adhikari et~al.]{Adhikari, DeNero \harvardand\
+  Wagner}{2019}{adhikari2019computational}
+Adhikari, A., DeNero, J. \harvardand\ Wagner, D.  \harvardyearleft
+  2019\harvardyearright , `Computational and inferential thinking: The
+  foundations of data science', {\em University of California, Berkeley} .
+
+\harvarditem[Barata et~al.]{Barata, Escudeiro, Duarte \harvardand\
+  Lino}{2019}{barata2019inclusion}
+Barata, A., Escudeiro, P., Duarte, V. \harvardand\ Lino, J.  \harvardyearleft
+  2019\harvardyearright , Inclusion through digital arts: Creating a community
+  of practice, {\em in} `Multi Conference on Computer Science and Information
+  Systems, MCCSIS 2019-Proceedings of the International Conferences on ICT,
+  Society and Human Beings', pp.~145--152.
+
+\harvarditem{Baumer}{2015}{baumer2015data}
+Baumer, B.  \harvardyearleft 2015\harvardyearright , `A data science course for
+  undergraduates: Thinking with data', {\em The American Statistician} {\bf
+  69}(4),~334--342.
+
+\harvarditem{Canelón \harvardand\ Hare}{2021}{canelon}
+Canelón, S. \harvardand\ Hare, E.  \harvardyearleft 2021\harvardyearright ,
+  `Revealing room for improvement in accessibility within a social media data
+  visualization community',
+  \url{https://www.youtube.com/watch?v=DxLkv2iRdf8&ab_channel=csvconf}.
+\newblock Talk at csvconf.
+
+\harvarditem{Cesal}{2020}{cesal}
+Cesal, A.  \harvardyearleft 2020\harvardyearright , `Writing alt text for data
+  visualization',
+  \url{https://medium.com/nightingale/writing-alt-text-for-data-visualization-2a218ef43f81}.
+
+\harvarditem[Chang et~al.]{Chang, Cheng, Allaire, Sievert, Schloerke, Xie,
+  Allen, McPherson, Dipert \harvardand\ Borges}{2022}{R-shiny}
+Chang, W., Cheng, J., Allaire, J., Sievert, C., Schloerke, B., Xie, Y., Allen,
+  J., McPherson, J., Dipert, A. \harvardand\ Borges, B.  \harvardyearleft
+  2022\harvardyearright , {\em shiny: Web Application Framework for R}.
+\newblock R package version 1.7.2.
+\newline\harvardurl{https://shiny.rstudio.com/}
+
+\harvarditem[Danyluk et~al.]{Danyluk, Leidig, Bari, Buck, Cassel, Doyle, Hines,
+  Ho, McGettrick, Qian, Schmitt, , Servin, Stefik \harvardand\
+  Wang}{2021}{danyluk2021computing}
+Danyluk, A., Leidig, P., Bari, A., Buck, S., Cassel, L., Doyle, M., Hines, K.,
+  Ho, T.~K., McGettrick, A., Qian, W., Schmitt, K., , Servin, C., Stefik, A.
+  \harvardand\ Wang, H.  \harvardyearleft 2021\harvardyearright , `Computing
+  competencies for undergraduate data science curricula'.
+
+\harvarditem[Godfrey et~al.]{Godfrey, Warren, Murrell, Bilton \harvardand\
+  Sorge}{2021}{R-BrailleR}
+Godfrey, A. J.~R., Warren, D., Murrell, P., Bilton, T. \harvardand\ Sorge, V.
+  \harvardyearleft 2021\harvardyearright , {\em BrailleR: Improved Access for
+  Blind Users}.
+\newblock R package version 0.32.1.
+\newline\harvardurl{https://github.com/ajrgodfrey/BrailleR}
+
+\harvarditem[Horst et~al.]{Horst, Hill \harvardand\
+  Gorman}{2020}{R-palmerpenguins}
+Horst, A., Hill, A. \harvardand\ Gorman, K.  \harvardyearleft
+  2020\harvardyearright , {\em palmerpenguins: Palmer Archipelago (Antarctica)
+  Penguin Data}.
+\newblock R package version 0.1.0.
+\newline\harvardurl{https://CRAN.R-project.org/package=palmerpenguins}
+
+\harvarditem[Kawas et~al.]{Kawas, Vonessen \harvardand\
+  Ko}{2019}{kawas2019teaching}
+Kawas, S., Vonessen, L. \harvardand\ Ko, A.~J.  \harvardyearleft
+  2019\harvardyearright , Teaching accessibility: A design exploration of
+  faculty professional development at scale, {\em in} `Proceedings of the 50th
+  ACM Technical Symposium on Computer Science Education', pp.~983--989.
+
+\harvarditem[Kim et~al.]{Kim, Joyner, Riegelhuth \harvardand\
+  Kim}{n.d.}{kimAccessibleVisualizationDesign2021}
+Kim, N.~W., Joyner, S.~C., Riegelhuth, A. \harvardand\ Kim, Y.
+  \harvardyearleft n.d.\harvardyearright , `Accessible {{Visualization}}:
+  {{Design Space}}, {{Opportunities}}, and {{Challenges}}',  {\bf
+  40}(3),~173--188.
+\newline\harvardurl{https://onlinelibrary.wiley.com/doi/10.1111/cgf.14298}
+
+\harvarditem[Lee et~al.]{Lee, Choe, Isenberg, Marriott, Stasko \harvardand\
+  Rhyne}{n.d.}{leeReachingBroaderAudiences2020}
+Lee, B., Choe, E.~K., Isenberg, P., Marriott, K., Stasko, J. \harvardand\
+  Rhyne, T.-M.  \harvardyearleft n.d.\harvardyearright , `Reaching {{Broader
+  Audiences With Data Visualization}}',  {\bf 40}(2),~82--90.
+\newline\harvardurl{https://ieeexplore.ieee.org/document/9023497/}
+
+\harvarditem{LinkedIn}{2020}{linkedin}
+LinkedIn  \harvardyearleft 2020\harvardyearright , `Emerging jobs report'.
+\newline\harvardurl{\url{https://business.linkedin.com/content/dam/me/business/en-us/talent-solutions/emerging-jobs-report/Emerging_Jobs_Report_U.S._FINAL.pdf}}
+
+\harvarditem{Lundgard \harvardand\
+  Satyanarayan}{n.d.}{lundgardAccessibleVisualizationNatural2022}
+Lundgard, A. \harvardand\ Satyanarayan, A.  \harvardyearleft
+  n.d.\harvardyearright , `Accessible {{Visualization}} via {{Natural Language
+  Descriptions}}: {{A Four-Level Model}} of {{Semantic Content}}'.
+\newline\harvardurl{http://vis.csail.mit.edu/pubs/vis-text-model/}
+
+\harvarditem{MacFarlane}{n.d.}{macfarlanePandoc2022}
+MacFarlane, J.  \harvardyearleft n.d.\harvardyearright , `Pandoc'.
+\newline\harvardurl{https://github.com/jgm/pandoc}
+
+\harvarditem[Marriott et~al.]{Marriott, Lee, Butler, Cutrell, Ellis, Goncu,
+  Hearst, McCoy \harvardand\
+  Szafir}{n.d.}{marriottInclusiveDataVisualization2021}
+Marriott, K., Lee, B., Butler, M., Cutrell, E., Ellis, K., Goncu, C., Hearst,
+  M., McCoy, K. \harvardand\ Szafir, D.~A.  \harvardyearleft
+  n.d.\harvardyearright , `Inclusive data visualization for people with
+  disabilities: A call to action',  {\bf 28}(3),~47--51.
+\newline\harvardurl{https://doi.org/10.1145/3457875}
+
+\harvarditem{McWhite \harvardand\ Wilke}{2022}{R-colorblindr}
+McWhite, C.~D. \harvardand\ Wilke, C.~O.  \harvardyearleft
+  2022\harvardyearright , {\em colorblindr: Simulate colorblindness in R
+  figures}.
+\newblock R package version 0.1.0.
+\newline\harvardurl{https://github.com/clauswilke/colorblindr}
+
+\harvarditem{Okabe \harvardand\ Ito}{2008}{okabe}
+Okabe, M. \harvardand\ Ito, K.  \harvardyearleft 2008\harvardyearright , `Color
+  universal design (cud) - how to make figures and presentations that are
+  friendly to colorblind people -'.
+\newline\harvardurl{\url{https://jfly.uni-koeln.de/color/}}
+
+\harvarditem{{R Core Team}}{2022}{R-base}
+{R Core Team}  \harvardyearleft 2022\harvardyearright , {\em R: A Language and
+  Environment for Statistical Computing}, R Foundation for Statistical
+  Computing, Vienna, Austria.
+\newline\harvardurl{https://www.R-project.org/}
+
+\harvarditem[Schwab-McCoy et~al.]{Schwab-McCoy, Baker \harvardand\
+  Gasper}{2021}{schwab2021data}
+Schwab-McCoy, A., Baker, C.~M. \harvardand\ Gasper, R.~E.  \harvardyearleft
+  2021\harvardyearright , `Data science in 2020: Computing, curricula, and
+  challenges for the next 10 years', {\em Journal of Statistics and Data
+  Science Education} {\bf 29}(sup1),~S40--S50.
+
+\harvarditem{Seo}{2022}{R-tactileR}
+Seo, J.  \harvardyearleft 2022\harvardyearright , {\em tactileR: Converting R
+  Graphics into a Braille Ready-to-Print PDF}.
+\newblock R package version 0.1.0.
+\newline\harvardurl{https://github.com/jooyoungseo/tactileR}
+
+\harvarditem{Siegert \harvardand\ Williams}{2017}{R-sonify}
+Siegert, S. \harvardand\ Williams, R.  \harvardyearleft 2017\harvardyearright ,
+  {\em sonify: Data Sonification - Turning Data into Sound}.
+\newblock R package version 0.0-1.
+\newline\harvardurl{https://CRAN.R-project.org/package=sonify}
+
+\harvarditem{{The Partnership on Employment \& Accessible
+  Technology}}{2018}{peat}
+{The Partnership on Employment \& Accessible Technology}  \harvardyearleft
+  2018\harvardyearright , `The accessible technology skills gap',
+  \url{https://www.peatworks.org/infographic-the-accessible-technology-skills-gap}.
+
+\harvarditem{Wickham \harvardand\ Grolemund}{2016}{wickham2016r}
+Wickham, H. \harvardand\ Grolemund, G.  \harvardyearleft 2016\harvardyearright
+  , {\em R for data science: import, tidy, transform, visualize, and model
+  data}, " O'Reilly Media, Inc.".
+
+\harvarditem{Xie}{2014}{knitr2014}
+Xie, Y.  \harvardyearleft 2014\harvardyearright , knitr: A comprehensive tool
+  for reproducible research in {R}, {\em in} V.~Stodden, F.~Leisch \harvardand\
+  R.~D. Peng, eds, `Implementing Reproducible Computational Research', Chapman
+  and Hall/CRC.
+\newblock ISBN 978-1466561595.
+\newline\harvardurl{http://www.crcpress.com/product/isbn/9781466561595}
+
+\harvarditem{Yan \harvardand\ Davis}{2019}{yan2019first}
+Yan, D. \harvardand\ Davis, G.~E.  \harvardyearleft 2019\harvardyearright , `A
+  first course in data science', {\em Journal of Statistics Education} {\bf
+  27}(2),~99--109.
+
+\end{thebibliography}
