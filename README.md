@@ -4,7 +4,7 @@
 
 ## Mine Dogucu, Department of Statistical Science, University College London and Department of Statistics, University of California Irvine
 
-## [arxiv link to be added soon]()
+## [arxiv preprint](https://arxiv.org/abs/2208.02565)
 
 ### Abstract
 
