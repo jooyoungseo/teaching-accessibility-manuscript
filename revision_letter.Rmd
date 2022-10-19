@@ -1,23 +1,25 @@
 ---
-title       : "Manuscript title"
-authors     : "First Author & Second Author"
-journal     : "Journal title"
-manuscript  : "Manuscript number"
+title       : "Teaching Visual Accessibility in Introductory Data Science Classes with Multi-Modal Data Representations"
+authors     : "JooYoung Seo & Mine Dogucu"
+journal     : "Journal of Data Science"
+manuscript  : "JDS2207-022"
 
 class       : "draft"
 output      : papaja::revision_letter_pdf
+bibliography: ["bib/packages.bib", "bib/references.bib"]
 ---
 
-Dear Dr. Editor,
+Dear Dr. Claire McKay Bowen,
 
 thank you very much for taking the time to consider our manuscript for publication at _`r rmarkdown::metadata$journal`_.
 In the following we address your and each reviewers' concerns point-by-point.
 
 
-# Reviewer \#1
+# AE
 
-\RC
-This is a reviewer comment
+\RC{
+    The authors preface their paper with the statement that "In this paper, we argue that accessibility should be taught as early as the introductory course as part of the data science curriculum." This argument is never presented. There is no discussion as to WHY this topic should be included in an introductory course. Why can't it be part of an upper level course?
+    }
 
 This is our response
 
@@ -26,9 +28,9 @@ This is our response
 \Easy
 
 
-\RC{This is the first paragraph of a long reviewer comment
-
-This is the second paragraph}
+\RC{
+    The authors close with the powerful statement "We believe that an accessible future in data science requires educators to teach accessibility as part of the curriculum deliberately"--but they have failed to present what incorporating it deliberately entails.
+    }
 
 This is our response.
 
@@ -39,8 +41,9 @@ This is our response.
 \Medium
 
 
-\RC
-This is a reviewer comment
+\RC{
+    I believe there are two courses of action the authors could take with this paper: a) develop and incorporate a significant argument for accessibility as part of a data science curriculum b) reframe this paper as an experiment in incorporating accessibility methods in an intro course As it currently stands, it falls somewhere in between and falls short of providing a meaningful presentation of either.
+    }
 
 This is our response
 
@@ -49,6 +52,39 @@ This is our response
 \TimeConsuming
 \Hard
 \NotEstimated
+
+
+# Reviewer
+
+\RC{
+    What are the significances of teaching visual accessibility at the 'introductory' data science level (as opposed to introducing them at a higher level of data science courses after students have a solid foundation in the discipline?
+}
+
+This is our response
+
+\Assignment{First Author}
+\WorkInProgress
+\Easy
+
+\RC{
+If the visual aid accessibility was introduced in the 'introductory' courses, will students see it again in higher-level courses? In other words, would other faculty members who teach higher levels continue to use this in their courses? Students would not retain the information if they were only to see visual aid accessibility at the beginning of their data science journey.
+}
+
+This is our response
+
+\Assignment{First Author}
+\WorkInProgress
+\Easy
+
+\RC{
+As visual aid accessibility is an essential part of various disciplines and career paths (science, engineering, business, arts and letters, etc.), would it be more beneficial to have a separate course (as a university-core or university-elective course) teaching visual aid accessibility rather than to integrate it into the foundational data science courses?
+}
+
+This is our response
+
+\Assignment{First Author}
+\WorkInProgress
+\Easy
 
 
 \newpage
