@@ -11,7 +11,7 @@ bibliography: ["bib/packages.bib", "bib/references.bib"]
 
 Dear Dr. Claire McKay Bowen,
 
-thank you very much for taking the time to consider our manuscript for publication at _`r rmarkdown::metadata$journal`_.
+Thank you very much for taking the time to consider our manuscript for publication at _`r rmarkdown::metadata$journal`_.
 In the following we address your and each reviewers' concerns point-by-point.
 
 
