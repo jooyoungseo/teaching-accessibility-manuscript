@@ -1,5 +1,5 @@
 
-# notoe
+# Notes
 
 * Why not teaching in a separate a11y course?: Need to talk about general vs. specific domain in terms of accessibility.
 
