@@ -32,7 +32,7 @@ This is our response
     The authors close with the powerful statement "We believe that an accessible future in data science requires educators to teach accessibility as part of the curriculum deliberately"--but they have failed to present what incorporating it deliberately entails.
     }
 
-This is our response.
+This is our response: For example, instructors can include accessibility as one of their evaluation criteria for course assignments or make it as a chance to obtain bonus credits for the students' visualization work.
 
 > This is a section quoted from the revised manuscript to illustrate the change.
 
@@ -45,7 +45,7 @@ This is our response.
     I believe there are two courses of action the authors could take with this paper: a) develop and incorporate a significant argument for accessibility as part of a data science curriculum b) reframe this paper as an experiment in incorporating accessibility methods in an intro course As it currently stands, it falls somewhere in between and falls short of providing a meaningful presentation of either.
     }
 
-This is our response
+This is our response: need to create a section dededicated to a11y, and say that we are presenting this paper as a demonstration how we integrated a11y into our courses.
 
 \Assignment{First Author}
 \Done
@@ -70,7 +70,7 @@ This is our response
 If the visual aid accessibility was introduced in the 'introductory' courses, will students see it again in higher-level courses? In other words, would other faculty members who teach higher levels continue to use this in their courses? Students would not retain the information if they were only to see visual aid accessibility at the beginning of their data science journey.
 }
 
-This is our response
+This is our response: good point so it is critical to share the same principle across different and with upper level courses .
 
 \Assignment{First Author}
 \WorkInProgress
