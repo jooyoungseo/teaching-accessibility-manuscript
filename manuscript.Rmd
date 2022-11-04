@@ -35,7 +35,7 @@ doi: "xx.xxxx/xxxxxxxxx"
 received: "April, 2020"  # optional: comment it out if no received date
 accepted: "May, 2020"  # optional: comment it out if no accepted date
 
-bibliography: ["bib/references.bib", "bib/packages.bib"]
+bibliography: ["bib/references.bib", "bib/packages.bib", "bib/teachinga11y.bib"]
 csl: "bib/chicago-author-date.csl"
 output:
   rticles::jds_article: 
