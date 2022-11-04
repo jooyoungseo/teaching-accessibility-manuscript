@@ -4,5 +4,7 @@
             "language": "rmd",
             "scheme": "file"
         }
-    ]
+    ],
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.quickSuggestions": false
 }
