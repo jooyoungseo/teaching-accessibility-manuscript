@@ -330,3 +330,25 @@ The most critical barriers to teaching accessibility that faculty reported were 
 Faculty desired resources that were specific to the areas of computing in which they teach rather than general accessibility resources and guidelines.
 
 ## @kawas2019teaching
+
+### RP
+
+Most CS students learn little about accessibility in higher education; this is partly because most CS faculty know little about accessibility.
+
+higher education CS faculty lack a model of professional development for learning to teach new topics.
+
+### DC
+
+conducted 18 semi-structured interviews with U.S. CS faculty, asking them to explore a prototype of a web-based professional development tool that linked accessibility topics to CS topics. 
+
+we investigated the feasibility of a "micro" professional development model for teaching accessibility in CS courses that could be used at scale.
+
+### Findings
+
+found that many organizational factors limited faculty's autonomy to integrate accessibility in many of their courses.
+
+also found that individual values and knowledge constrained faculty's ability and willingness to both learn and integrate accessibility topics into their courses.
+
+ However, many faculty expressed desire to teach accessibility in their courses if they had access to even basic accessibility content and materials to use in their courses.
+
+ 
