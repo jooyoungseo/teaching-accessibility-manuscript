@@ -6,7 +6,7 @@ manuscript  : "JDS2207-022"
 
 class       : "draft"
 output      : papaja::revision_letter_pdf
-bibliography: ["bib/packages.bib", "bib/references.bib"]
+bibliography: ["bib/packages.bib", "bib/references.bib", "bib/teachinga11y.bib"]
 ---
 
 Dear Dr. Claire McKay Bowen,
@@ -80,7 +80,11 @@ This is our response: good point so it is critical to share the same principle a
 As visual aid accessibility is an essential part of various disciplines and career paths (science, engineering, business, arts and letters, etc.), would it be more beneficial to have a separate course (as a university-core or university-elective course) teaching visual aid accessibility rather than to integrate it into the foundational data science courses?
 }
 
-This is our response
+According to @shinoharaWhoTeachesAccessibility2018,
+
+> The most critical barriers to teaching accessibility that faculty reported were the absence of clear and discipline-specific accessibility learning objectives and the lack of faculty knowledge about accessibility.
+
+> Faculty desired resources that were specific to the areas of computing in which they teach rather than general accessibility resources and guidelines.
 
 \Assignment{First Author}
 \WorkInProgress

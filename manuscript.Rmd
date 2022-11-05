@@ -317,9 +317,13 @@ Industry demand for software developers with knowledge of accessibility has incr
 
 ### RQ
 
+* RQ1. Who is teaching accessibility?
+* RQ2. What barriers do faculty see to teaching accessibility?
+* RQ3. What factors predict who is teaching accessibility?
+
 ### DC
 
-we surveyed 14,176 computing and information science faculty in the United States. We received a representative sample of at least one response from 318 of the 352 institutions we surveyed, totaling 1,857 responses.
+surveyed 14,176 computing and information science faculty in the United States. We received a representative sample of at least one response from 318 of the 352 institutions we surveyed, totaling 1,857 responses.
 
 ### Findings
 
@@ -328,6 +332,15 @@ we surveyed 14,176 computing and information science faculty in the United State
 The most critical barriers to teaching accessibility that faculty reported were the absence of clear and discipline-specific accessibility learning objectives and the lack of faculty knowledge about accessibility.
 
 Faculty desired resources that were specific to the areas of computing in which they teach rather than general accessibility resources and guidelines.
+
+### Quotes
+
+> Consortia like TeachAccess (teachaccess.org), led by Yahoo!, Facebook, Microsoft, Google, and Adobe, represent this increased demand for accessibility knowledge, and are leading efforts to increase the number of computer and information science faculty teaching accessibility.
+
+> In parallel, professional societies such as ABET [abet.org] have recently added accessibility into engineering design accreditation requirements.
+
+> Incorporating instruction on accessibility at scale requires two major elements: (1) methods for how to teach accessibility in computer science (CS) and related fields, and (2) large scale adoption and implementation of these methods by faculty.
+<!-- In conclusion, we have just demonstrated some methods to make data science visualization more accessible, focusing on the second element. However, we need more broad effort to make it at a large scale as @shinoharaWhoTeachesAccessibility2018 said. -->
 
 ## @kawas2019teaching
 
@@ -345,10 +358,18 @@ we investigated the feasibility of a "micro" professional development model for 
 
 ### Findings
 
-found that many organizational factors limited faculty's autonomy to integrate accessibility in many of their courses.
+many organizational factors limited faculty's autonomy to integrate accessibility in many of their courses.
 
-also found that individual values and knowledge constrained faculty's ability and willingness to both learn and integrate accessibility topics into their courses.
+individual values and knowledge constrained faculty's ability and willingness to both learn and integrate accessibility topics into their courses.
 
- However, many faculty expressed desire to teach accessibility in their courses if they had access to even basic accessibility content and materials to use in their courses.
+However, many faculty expressed desire to teach accessibility in their courses if they had access to even basic accessibility content and materials to use in their courses.
 
- 
+## @koAccessComputingPromotesTeaching2016# 
+
+### RP
+
+### RQ
+
+### DC
+
+## ### Findings
