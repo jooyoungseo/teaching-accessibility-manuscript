@@ -339,8 +339,16 @@ Faculty desired resources that were specific to the areas of computing in which 
 
 > In parallel, professional societies such as ABET [abet.org] have recently added accessibility into engineering design accreditation requirements.
 
+> some have incorporated accessibility in software engineering courses [@martin-escalonaIntroductionTopicAccessibility2013; @ludiIntroducingAccessibilityRequirements2007; @ludiAccessEveryoneIntroducing2002], as part of introducing web development [@koAccessComputingPromotesTeaching2016; @rosmaitaAccessibilityFirstNew2006], or in HCI and design courses as a central component of design process [@shinoharaHowDesigningPeople2016; @shinoharaTeachingAccessibilityTechnology2017a].
+
 > Incorporating instruction on accessibility at scale requires two major elements: (1) methods for how to teach accessibility in computer science (CS) and related fields, and (2) large scale adoption and implementation of these methods by faculty.
 <!-- In conclusion, we have just demonstrated some methods to make data science visualization more accessible, focusing on the second element. However, we need more broad effort to make it at a large scale as @shinoharaWhoTeachesAccessibility2018 said. -->
+
+> These works suggest that large scale curricular change is not a matter of top-down decree, but one of fostering local change agents who are intimately aware of the culture of specific institutions and who can devise and implement strategies to work within them.
+
+> theories of curricular change argue that change only comes through social and instructional discourse among faculty organically contributing to, and constructing, instructors’ knowledge [@barnettConceptualisingCurriculumChange2001; @kirkTeacherVoiceOwnership2001].
+
+> Kezar and Eckel, in an examination of several institutions, determined that institutional culture could enhance or stymie curriculum changes [@kezarEffectInstitutionalCulture2002].
 
 ## @kawas2019teaching
 
