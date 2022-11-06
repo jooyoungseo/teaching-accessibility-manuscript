@@ -421,3 +421,9 @@ However, many faculty expressed desire to teach accessibility in their courses i
 
 <!-- Accessible viz for all beyond disabilities -->
 > Inclusive approaches to visualizations are likely to help more than those people with permanent disabilities. There are also hundreds of millions of people with temporary or situational disabilities. New, inclusive approaches could readily become “informational curb cuts” that benefit everyone.
+
+<!-- Tactile representation for blind people -->
+> The Braille Authority of North America (BANA; http://www. brailleauthority.org) recommends the use of tactile graphics to show spatial data. These are usually raised line drawings, but more recently, 3D-printed models have been used. Research suggests that despite the differences between tactile and visual perception, spatial perception and reasoning is fundamental to the use of both visual and tactile graphics, and that tactile maps, scatter plots, and network diagrams offer similar benefits to the corresponding visual graphic (e.g., @yangTactilePresentationNetwork2020a).
+
+<!-- Tactile production is expensive -->
+> Unfortunately, the cost and time for the production of tactile graphics limits their use for data exploration. More recently, researchers have explored the multimodal presentation of graphics on touchscreen devices, providing audio and haptic feedback when the reader’s fingers touch the graphic. There is considerable opportunity to explore data-exploration tools leveraging refreshable tactile displays as well as touchscreen-based presentations, as these may provide similar benefits to tactile graphics.
