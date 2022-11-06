@@ -329,6 +329,8 @@ surveyed 14,176 computing and information science faculty in the United States. 
 
 175 institutions (50%) had at least one instructor teaching accessibility and that no fewer than 2.5% of faculty overall teach accessibility. Faculty that teach accessibility are twice as likely to be female, to have expertise in HCI and software engineering, and to know people with disabilities.
 
+Overall, 20% of faculty (375) responded “Yes” to the prompt “Do you teach courses that incorporate topics about accessibility?”
+
 The most critical barriers to teaching accessibility that faculty reported were the absence of clear and discipline-specific accessibility learning objectives and the lack of faculty knowledge about accessibility.
 
 Faculty desired resources that were specific to the areas of computing in which they teach rather than general accessibility resources and guidelines.
@@ -381,3 +383,24 @@ However, many faculty expressed desire to teach accessibility in their courses i
 ### DC
 
 ## ### Findings
+
+## ## @joynerVisualizationAccessibilityWild2022
+
+### rp
+
+### rq
+
+### dc
+
+### ### findings
+
+## @marriottInclusiveDataVisualization2021
+
+### rp
+
+### rq
+
+### dc
+
+### findings
+
