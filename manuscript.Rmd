@@ -74,15 +74,20 @@ library(palmerpenguins)
 # Introduction
 
 According to LinkedIn's U.S. Emerging Jobs Report, data scientists rank among the top emerging jobs [-@linkedin].
-With the urgent need for training a higher number of skilled data scientists, many institutes of higher education are developing their own data science curricula. However, a consensus on what should be included in such curricula has not yet been reached. 
-One of the few guidelines on the topic is written by the ACM Data Science Task Force and titled *Computing Competencies for Undergraduate Data Science Curricula*. In this report, accessibility is a "foundational consideration" at the knowledge level when it comes to displaying data [@danyluk2021computing]. 
+With the urgent need for training a higher number of skilled data scientists, many institutes of higher education are developing their own data science curricula. However, a consensus on what should be included in such curricula has not yet been reached. One of the few guidelines on the topic is written by the ACM Data Science Task Force and titled *Computing Competencies for Undergraduate Data Science Curricula*. In this report, accessibility is a "foundational consideration" at the knowledge level when it comes to displaying data [@danyluk2021computing]. 
 
-Training on accessibility is also an important job-readiness aspect of curriculum design. The Partnership on Employment & Accessible Technology (PEAT) states in their Accessible Technology Skills Gap Report [-@peat] that 84% of industry correspondents that they work with say "it is important or very important for them to hire developers and designers with accessible technology skills."
-Even though this statistic may be different specifically for data scientists, the data science field is broad with the intersection in careers as developers (e.g., data dashboard and package developers) and designers (e.g., data visualization experts). 
+In fact, training on accessibility has been increasingly becoming an important job-readiness aspect in computing and information sciences [@shinoharaWhoTeachesAccessibility2018; @kawasTeachingAccessibilityDesign2019]. For instance, some notable big tech companies, such as Yahoo!, Facebook, Microsoft, Google, and Adobe, have been leading a TeachAccess (teachaccess.org) Consortia to represent this increased demand for accessibility knowledge and to increase the number of computer and information science faculty teaching accessibility [-@shinoharaWhoTeachesAccessibility2018]. The Partnership on Employment & Accessible Technology (PEAT), in their Accessible Technology Skills Gap Report [-@peat], also highlights this trend--84% of industry correspondents that they work with say "it is important or very important for them to hire developers and designers with accessible technology skills." Growing interest in and importance of teaching accessibility can be also found in professional societies. For example, accessibility has been recently added to engineering design accreditation requirements by Accreditation Board for Engineering and Technology [ABET; abet.org] [@shinoharaWhoTeachesAccessibility2018].
+
+Even though this statistic may be different specifically for data scientists, the data science as a highly interdisciplinary field across computing and information sciences also shares the rising demand for the accessibility preparedness. Furthermore, data science is broad with the intersection in careers as developers (e.g., data dashboard and package developers) and designers (e.g., data visualization experts). Therefore, the impact of teaching and learning accessibility is as far-reaching as its wide scope.
+
 The PEAT also states that 60% of industry respondents "it was difficult or very difficult for their organization to find job candidates with accessibility skills."
 
-Despite the recent recommendations, accessibility from disabilities perspectives has not yet found its place in the data science course materials.
-One main reason for this could be that accessibility is often covered in the computer sciences [@kawas2019teaching] or the digital arts [@barata2019inclusion], if at all covered.
+
+<!-- Examples of how accessibility is integrated into computing and information sciences courses -->
+> some have incorporated accessibility in software engineering courses [@martin-escalonaIntroductionTopicAccessibility2013; @ludiIntroducingAccessibilityRequirements2007; @ludiAccessEveryoneIntroducing2002], as part of introducing web development [@koAccessComputingPromotesTeaching2016; @rosmaitaAccessibilityFirstNew2006], or in HCI and design courses as a central component of design process [@shinoharaHowDesigningPeople2016; @shinoharaTeachingAccessibilityTechnology2017a].
+
+Despite the increasing demand for accessibility knowledge in both industries and academia, accessibility from disabilities perspectives has not yet found its place in the data science course materials.
+One main reason for this could be that accessibility is often covered in the computer sciences [@kawasTeachingAccessibilityDesign2019] or the digital arts [@barata2019inclusion], if at all covered.
 However, data science is an interdisciplinary field that is taught in various disciplines, including computer science, statistics, business schools, political science, and biological sciences [@schwab2021data].
 Thus, we believe that the resources and conversations around accessibility have not yet extended to the broader data science education community at the scale that they should.
 For instance, many introductory data science courses [@yan2019first; @baumer2015data], textbooks [@adhikari2019computational; @wickham2016r], or curricula [@schwab2021data] either fail to mention accessibility at all or only focus on the accessing data. 
@@ -355,7 +360,7 @@ Faculty desired resources that were specific to the areas of computing in which 
 
 > Kezar and Eckel, in an examination of several institutions, determined that institutional culture could enhance or stymie curriculum changes [@kezarEffectInstitutionalCulture2002].
 
-## @kawas2019teaching
+## @kawasTeachingAccessibilityDesign2019
 
 ### RP
 
@@ -378,14 +383,6 @@ individual values and knowledge constrained faculty's ability and willingness to
 However, many faculty expressed desire to teach accessibility in their courses if they had access to even basic accessibility content and materials to use in their courses.
 
 ## @marriottInclusiveDataVisualization2021
-
-### RP
-
-### RQ
-
-### DC
-
-### Findings
 
 ### Quotes
 
