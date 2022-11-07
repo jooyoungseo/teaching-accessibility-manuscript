@@ -413,6 +413,9 @@ However, many faculty expressed desire to teach accessibility in their courses i
 <!-- how many people with disabilities in the world? -->
 > A 2011 report from the WHO (https://bit.ly/3raT0kg) estimates that more than 1 billion people—15 percent of the world’s population— live with some form of disability, of whom about one-fifth experience significant difficulties in functioning. While it may be obvious that people who are blind or have low vision (BLV) would face challenges in accessing data visualizations, this also holds for other kinds of disability. People who have cognitive and learning disabilities (CALD) frequently have trouble making sense of the abstractions and symbolic conventions used in visualizations, and people who lack fine motor coordination or have tremors may be unable to operate interactive visualizations.
 
+<!-- Three types of major disabilities  affected by inaccessible viz -->
+> There are three main kinds of disability that may affect access to visualizations: visual, cognitive, and motor impairments. It is not uncommon for people to have more than one kind of impairment.
+
 <!-- Why is accessible Visualization important? -->
 > this is an equity issue with severe consequences, because a lack of access to visualizations and underlying data impacts health, educational and work opportunities, and lifestyle. For instance, the BLV community has identified a lack of access to educational materials [@butlerUnderstandingGraphicalChallenges2017] and online data visualizations about Covid-19 as a significant concern (https://bit.ly/2NJzy0C).
 
@@ -427,3 +430,6 @@ However, many faculty expressed desire to teach accessibility in their courses i
 
 <!-- Tactile production is expensive -->
 > Unfortunately, the cost and time for the production of tactile graphics limits their use for data exploration. More recently, researchers have explored the multimodal presentation of graphics on touchscreen devices, providing audio and haptic feedback when the reader’s fingers touch the graphic. There is considerable opportunity to explore data-exploration tools leveraging refreshable tactile displays as well as touchscreen-based presentations, as these may provide similar benefits to tactile graphics.
+
+<!-- critical disability studies -->
+@mankoffDisabilityStudiesSource2010
