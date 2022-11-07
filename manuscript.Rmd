@@ -74,8 +74,7 @@ library(palmerpenguins)
 # Introduction
 
 According to LinkedIn's U.S. Emerging Jobs Report, data scientists rank among the top emerging jobs [-@linkedin].
-With the urgent need for training a higher number of skilled data scientists, many institutes of higher education are developing their own data science curricula. 
-However, a consensus on what should be included in such curricula has not yet been reached. 
+With the urgent need for training a higher number of skilled data scientists, many institutes of higher education are developing their own data science curricula. However, a consensus on what should be included in such curricula has not yet been reached. 
 One of the few guidelines on the topic is written by the ACM Data Science Task Force and titled *Computing Competencies for Undergraduate Data Science Curricula*. In this report, accessibility is a "foundational consideration" at the knowledge level when it comes to displaying data [@danyluk2021computing]. 
 
 Training on accessibility is also an important job-readiness aspect of curriculum design. The Partnership on Employment & Accessible Technology (PEAT) states in their Accessible Technology Skills Gap Report [-@peat] that 84% of industry correspondents that they work with say "it is important or very important for them to hire developers and designers with accessible technology skills."
@@ -378,26 +377,6 @@ individual values and knowledge constrained faculty's ability and willingness to
 
 However, many faculty expressed desire to teach accessibility in their courses if they had access to even basic accessibility content and materials to use in their courses.
 
-## @koAccessComputingPromotesTeaching2016# 
-
-### RP
-
-### RQ
-
-### DC
-
-## ### Findings
-
-## ## @joynerVisualizationAccessibilityWild2022
-
-### rp
-
-### rq
-
-### dc
-
-### ### findings
-
 ## @marriottInclusiveDataVisualization2021
 
 ### RP
@@ -433,3 +412,27 @@ However, many faculty expressed desire to teach accessibility in their courses i
 
 <!-- critical disability studies -->
 @mankoffDisabilityStudiesSource2010
+
+
+<!-- The following is good to review when having more time -->
+
+## ## @joynerVisualizationAccessibilityWild2022
+
+### rp
+
+### rq
+
+### dc
+
+### ### findings
+
+
+## @koAccessComputingPromotesTeaching2016
+
+### RP
+
+### RQ
+
+### DC
+
+### Findings
