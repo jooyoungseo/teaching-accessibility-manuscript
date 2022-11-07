@@ -73,12 +73,22 @@ library(palmerpenguins)
 
 # Introduction
 
-According to LinkedIn's U.S. Emerging Jobs Report, data scientists rank among the top emerging jobs [-@linkedin].
-With the urgent need for training a higher number of skilled data scientists, many institutes of higher education are developing their own data science curricula. However, a consensus on what should be included in such curricula has not yet been reached. One of the few guidelines on the topic is written by the ACM Data Science Task Force and titled *Computing Competencies for Undergraduate Data Science Curricula*. In this report, accessibility is a "foundational consideration" at the knowledge level when it comes to displaying data [@danyluk2021computing]. 
+According to LinkedIn's U.S. Emerging Jobs Report, data scientists rank among the top emerging jobs [-@linkedin]. With the urgent need for training a higher number of skilled data scientists, many institutes of higher education are developing their own data science curricula. However, a consensus on what should be included in such curricula has not yet been reached. One of the few guidelines on the topic is written by the ACM Data Science Task Force and titled *Computing Competencies for Undergraduate Data Science Curricula*. In this report, accessibility is a "foundational consideration" at the knowledge level when it comes to displaying data [@danyluk2021computing]. 
 
 In fact, training on accessibility has been increasingly becoming an important job-readiness aspect in computing and information sciences [@shinoharaWhoTeachesAccessibility2018; @kawasTeachingAccessibilityDesign2019]. For instance, some notable big tech companies, such as Yahoo!, Facebook, Microsoft, Google, and Adobe, have been leading a TeachAccess (teachaccess.org) Consortia to represent this increased demand for accessibility knowledge and to increase the number of computer and information science faculty teaching accessibility [-@shinoharaWhoTeachesAccessibility2018]. The Partnership on Employment & Accessible Technology (PEAT), in their Accessible Technology Skills Gap Report [-@peat], also highlights this trend--84% of industry correspondents that they work with say "it is important or very important for them to hire developers and designers with accessible technology skills." Growing interest in and importance of teaching accessibility can be also found in professional societies. For example, accessibility has been recently added to engineering design accreditation requirements by Accreditation Board for Engineering and Technology [ABET; abet.org] [@shinoharaWhoTeachesAccessibility2018].
 
 Even though this statistic may be different specifically for data scientists, the data science as a highly interdisciplinary field across computing and information sciences also shares the rising demand for the accessibility preparedness. Furthermore, data science is broad with the intersection in careers as developers (e.g., data dashboard and package developers) and designers (e.g., data visualization experts). Therefore, the impact of teaching and learning accessibility is as far-reaching as its wide scope.
+
+Data science consits of iterative process importing, tidying, transforming, visualizing, and modeling data [@wickham2016r]. While each stage has unique challenges, data visualization may pose fundamental barriers against people with permanent, situational, and temporary disabiliteis (e.g., visual, cognitive, and motor impairments to name a few) in accessing information [@marriottInclusiveDataVisualization2021; @leeReachingBroaderAudiences2020]. For example, people with cognitive and learning disabilities often have difficulties understanding the abstractions and symbolic conventions used in visualizations, and people lacking fine motor coordination or having tremors may be unable to operate interactive visualizations not to mention people who are blind and have low vision facing extra challenges in visualization access [@marriottInclusiveDataVisualization2021]. @marriottInclusiveDataVisualization2021, in their call to action paper, highlights the serious impact of inaccessible visualizations: "this is an equity issue with severe consequences, because a lack of access to visualizations and underlying data impacts health, educational and work opportunities, and lifestyle." <!-- Need to find a specific page number for this quote. -->
+
+Despite these 
+
+
+<!-- Accessible viz for all beyond disabilities -->
+> Inclusive approaches to visualizations are likely to help more than those people with permanent disabilities. There are also hundreds of millions of people with temporary or situational disabilities. New, inclusive approaches could readily become “informational curb cuts” that benefit everyone.
+
+
+
 
 The PEAT also states that 60% of industry respondents "it was difficult or very difficult for their organization to find job candidates with accessibility skills."
 
