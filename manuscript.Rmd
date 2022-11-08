@@ -114,8 +114,7 @@ Students should:
 2. use at least one assistive technology;
 3. consider different representations of data.
 
-The first objective provides our students with a chance to learn legislative concepts and empathy building concerning diversity issues. As both the authors teach data science in the United States, it was a natural choice for us to make students aware of the Americans with Disabilities Act (ADA). 
-The ADA is a civil rights law that prohibits discrimination against individuals with disabilities. 
+The first objective provides our students with a chance to learn legislative concepts and empathy building concerning diversity issues. As both the authors teach data science in the United States, it was a natural choice for us to make students aware of the Americans with Disabilities Act (ADA). However, many countries thesedays may have their own laws similar to ADA, such as Canada’s Accessibility for Ontarians with Disabilities Act, European Accessibility Act, United Kingdom’s Equality Act, Ireland's Equal Status Acts, Australia's Disability Discrimination Act, Israel's Equal Rights of Persons with Disabilities Act, South Korea’s Act on Welfare of Persons with Disabilities, and Japan’s Elimination of Discrimination against Persons with Disabilities Act to name a few. The ADA is a civil rights law that prohibits discrimination against individuals with disabilities. 
 Regardless of their own disability status, as future data scientists, we expect our students to produce data science products that are accessible to all, not only because it is the right thing to do but also because they may have future responsibilities as data scientists to comply to ADA.
 
 The second learning objective echoes our argument on accessible data representation beyond one-type modality. People with disabilities may rely on different types of assistive technology in their day-to-day lives. 
