@@ -102,7 +102,7 @@ We argue that instructors need to teach multiple data representation methods so 
 To this end, we have considered multi-data representations and their relation to accessibility in our courses, and that's what we will demonstrate throughout this paper.
 
 In incorporating accessibility to our course contents, we also wanted our students to be familiar with assistive technologies, and since our focus has been on visual accessibility, it was a natural fit to include screen readers. 
-Screen reader is an assistive technology that supports blind or visually impaired people in using their computer by reading aloud the contents. Recently, screen reader has been provided as one of the built-in accessibility features on operating systems, such as Windows Narrator and Apple's VoiceOver.
+Screen reader is an assistive technology that supports blind or visually impaired people in using their computer by reading aloud the contents. Recently, screen reader has been provided as one of the built-in accessibility features on operating systems, such as Microsoft Windows Narrator, Apple iOS VoiceOver, Android TalkBak and Linux Gnome Orca.
 
 However, we also want to make our teaching as inclusive as possible to other types of dis/abilities so that we are not just confined to issues of visual disabilities.
 
