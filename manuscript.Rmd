@@ -235,9 +235,7 @@ y <- 1:5
 sonify(x, y)
 ```
 
-In this example, a scatter plot is represented by sound. Position on the X axis is communicated using the left-to-right stereo effect; the pitch of the sound indicates the position on the Y axis.
-
-Data sonification is very useful when representing linear patterns; however, there is much room for improvement in terms of complex data sonification as of this writing. Thus, we suggest using sonification for simple linear regression models.
+In this example, a scatter plot is represented by sound. Position on the X axis is communicated using the left-to-right stereo effect; the pitch of the sound indicates the position on the Y axis. Data sonification is very useful when representing linear patterns; however, there is much room for improvement in terms of complex data sonification as of this writing. Thus, we suggest using sonification for simple linear regression models.
 
 ```{r plot-xy, fig.cap="Visualizing the relationship of two numerical variables with scatter plot.", fig.alt="Scatter plot representing the positive relationship between x and y variables. There are five points on the plot at x,y values as 1,1 - 2,2 - 3,3 - 4,4 - 5,5", echo=FALSE, fig.height=5}
 # Prepare variables
@@ -252,9 +250,7 @@ plot(x, y)
 
 Data tactulization refers to making data visualization in a tactile form so that it can be touchable by fingers. 
 Although this requires some expensive embossing hardware (e.g., braille embosser or Swell Form Heating Machine), this may be one of the most effective and accessible data representations for those who are blind or visually impaired. 
-The `tactileR` [@R-tactileR] package in R can generate a ready-to-emboss pdf file from R graphics and ggplot objects. 
-Students and instructors can produce their own tactile graphics by using the following functions: `tactileR::brl_begin()`; [their graphic object]; `tactileR::brl_end()` (see Figure \ref{fig:tactile-example}). 
-For those who do not have access to embossing hardware, the learning process on tactualization can be supported with a video that shows the process of printing a tactile graph available at \url{\video{}}.
+The `tactileR` [@R-tactileR] package in R can generate a ready-to-emboss pdf file from R graphics and ggplot objects. Students and instructors can produce their own tactile graphics by using the following functions: `tactileR::brl_begin()`; [their graphic object]; `tactileR::brl_end()` (see Figure \ref{fig:tactile-example}). For those who do not have access to embossing hardware, the learning process on tactualization can be supported with a video that shows the process of printing a tactile graph available at \url{\video{}}.
 
 ```{r tactile-producing-code, echo=TRUE, include=TRUE, cache=TRUE, message=FALSE, results="hide"}
 library(palmerpenguins)
