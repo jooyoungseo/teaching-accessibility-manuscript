@@ -156,10 +156,10 @@ fig
 The `colorblindr` package [@R-colorblindr] provides a set of functions that can be useful in teaching and practicing color blindness accessibility. 
 For instance, `colorblindr::cvd_grid()` function provides color-deficiency simulations of a given plot. 
 In the code chunk below, the plot is named as `fig`. 
-The code creates a grid of four plots where each plot shows a different color vision deficiency, including deutanomaly, protanomaly, tritanomaly, and desaturated.
+The code creates a grid of four plots where each plot shows a different color vision deficiency, including deuteranomaly, protanomaly, tritanomaly, and desaturated.
 This grid allows those without any color vision deficiencies to experience what data visualizations would look like to a sighted person that has a color deficiency. 
 
-```{r penguins-cvd, fig.cap="Color Blindness Simulation with colorblindr", fig.alt="A 2 by 2 grid of four scatterplots. The scatterplots are the same as the scatterplot in the previous figure except for colors. From left to right and top to bottom the plots read deuteranomaly, protanomaly, tritanopia, and desaturated. The deuteranomaly plot shows two sets of points that are close to brownish green and one set of points that are violet. The protanomaly plot is similar in colors, one of the brownish greens is closer to gray. In the tritanopia plot, it is difficult to distinguish the green/blue colors. There is also a pink color that stands out. In the desaturated plot all the points are gray and the different species are indistinguishable.", warning=FALSE, echo=TRUE}
+```{r penguins-cvd, fig.cap="Color Blindness Simulation with colorblindr", fig.alt="A 2 by 2 grid of four scatterplots. The scatterplots are the same as the scatterplot in the previous figure except for colors. From left to right and top to bottom the plots read deuteranomaly, protanomaly, tritanomaly, and desaturated. The deuteranomaly plot shows two sets of points that are close to brownish green and one set of points that are violet. The protanomaly plot is similar in colors, one of the brownish greens is closer to gray. In the tritanomaly plot, it is difficult to distinguish the green/blue colors. There is also a pink color that stands out. In the desaturated plot all the points are gray and the different species are indistinguishable.", warning=FALSE, echo=TRUE}
 colorblindr::cvd_grid(fig)
 ```
 
