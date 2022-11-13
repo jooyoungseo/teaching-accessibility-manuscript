@@ -5,8 +5,11 @@ journal     : "Journal of Data Science"
 manuscript  : "JDS2207-022"
 
 class       : "draft"
-output      : papaja::revision_letter_pdf
+output:
+  papaja::revision_letter_pdf:
+    keep_tex: true
 bibliography: ["bib/packages.bib", "bib/references.bib", "bib/teachinga11y.bib"]
+csl: "bib/chicago-author-date.csl"
 ---
 
 Dear Dr. Claire McKay Bowen,
@@ -15,17 +18,19 @@ Thank you very much for taking the time to consider our manuscript for publicati
 In the following we address your and each reviewers' concerns point-by-point.
 
 
-# AE
+# AE {#response1}
 
 \RC{
     The authors preface their paper with the statement that "In this paper, we argue that accessibility should be taught as early as the introductory course as part of the data science curriculum." This argument is never presented. There is no discussion as to WHY this topic should be included in an introductory course. Why can't it be part of an upper level course?
     }
 
-This is our response
+We appreciate your thoughtful comment. In response to this feedback, we have elaborated our argument more clearly in our manuscript.
 
-\Assignment{First Author}
-\WorkInProgress
-\Easy
+The following includes part of the `Introduction` section quoted from the revised manuscript to illustrate the change:
+
+> Some people may wonder why we need to teach accessibility as part of an introductory data science course as opposed to covering accessibility in a separate and general course module. According to the recent faculty survey on teaching accessibility [@shinoharaWhoTeachesAccessibility2018], the most critical barriers to teaching accessibility reported by 1,857 faculty from 318 institutions were "the absence of clear and *discipline-specific accessibility* [emphasis added] learning objectives and the lack of faculty knowledge about accessibility" (p. 197). This reveals faculty often have trouble making sense of how they can integrate accessibility into their specific teaching domains, which requires applied knowledge of accessibility beyond general concepts.
+> . . .
+> Another important aspect of curriculum design includes the timing of when to introduce accessibility concepts in data science courses. For example, some instructors may prefer to put teaching accessibility on the back burner so that they can save more time for their students to learn data science fundamentals first and adopt accessibility principles in an upper-level course later. While the decision is subject to each institution's and individual instructor's discussion, we believe the sooner, the better. This is because: (1) some students may take an introductory level only, which means they will lose a chance to get exposed to this demanding knowledge unless they elect the upper-level course covering accessibility; (2) this kind of separation may unintentionally contribute to misconceptions, such as accessibility is difficult and/or accessibility is optional, not essential. When properly incorporated, accessibility can be taught along with other data science fundamentals (e.g., wrangling, merging, tidying, visualizing) while not necessarily putting more cognitive burden on students' current learning. Rather, students can take a chance to become creative design thinkers by making their data science work more meaningful and accessible through "empathy learning" [@putnamTeachingAccessibilityLearning2015]. Thus, we suggest teaching accessibility as part of an introductory data science course for students to practice coupling their data science knowledge with accessibility principles as early as possible.
 
 
 \RC{
@@ -36,22 +41,16 @@ This is our response: For example, instructors can include accessibility as one 
 
 > This is a section quoted from the revised manuscript to illustrate the change.
 
-\Assignment{Second Author}
-\AlmostDone
-\Medium
-
 
 \RC{
     I believe there are two courses of action the authors could take with this paper: a) develop and incorporate a significant argument for accessibility as part of a data science curriculum b) reframe this paper as an experiment in incorporating accessibility methods in an intro course As it currently stands, it falls somewhere in between and falls short of providing a meaningful presentation of either.
     }
 
-This is our response: need to create a section dededicated to a11y, and say that we are presenting this paper as a demonstration how we integrated a11y into our courses.
+Thank you for the constructive feedback. We strengthen our argument by adding the following paragraphs in the `Introduction` section.
 
-\Assignment{First Author}
-\Done
-\TimeConsuming
-\Hard
-\NotEstimated
+> Data science consists of an iterative process of importing, tidying, transforming, visualizing, and modeling data [@wickham2016r]. While each stage has unique challenges, data visualization may pose fundamental barriers against people with permanent, situational, and temporary disabilities (e.g., visual, cognitive, and motor impairments, to name a few) in accessing information [@marriottInclusiveDataVisualization2021; @leeReachingBroaderAudiences2020]. For example, people with cognitive and learning disabilities often have difficulties understanding the abstractions and symbolic conventions used in visualizations, and people lacking fine motor coordination or having tremors may be unable to operate interactive visualizations, not to mention people who are blind and have low vision facing extra challenges in visualization access [@marriottInclusiveDataVisualization2021; @leeReachingBroaderAudiences2020]. @marriottInclusiveDataVisualization2021, in their call to action paper, highlights the serious impact of inaccessible visualizations: "This is an equity issue with severe consequences because a lack of access to visualizations and underlying data impacts health, educational and work opportunities, and lifestyle" (p. 48).
+> Despite the increasing demand for accessibility knowledge in both industry and academia and the critical impact of accessible visualizations, accessibility has not yet found its place in the data science course and teaching materials. One main reason for this could be that accessibility is often incorporated into human-computer interaction (HCI) and design courses [@shinoharaHowDesigningPeople2016; @shinoharaTeachingAccessibilityTechnology2017a], introductory web development [@koAccessComputingPromotesTeaching2016; @rosmaitaAccessibilityFirstNew2006], software engineering courses [@martin-escalonaIntroductionTopicAccessibility2013; @ludiIntroducingAccessibilityRequirements2007; @ludiAccessEveryoneIntroducing2002] or the digital arts [@barata2019inclusion], if at all covered. However, data science is an interdisciplinary field that is taught in various disciplines, including not only computer and information sciences but also statistics, business schools, political science, biological sciences, and more [@schwab2021data]. Therefore, we posit that the resources and conversations around accessibility have not yet extended to the broader data science education community at the scale that they should. For instance, many introductory data science courses [@yan2019first; @baumer2015data], textbooks [@adhikari2019computational; @wickham2016r], or curricula [@schwab2021data] either fail to mention accessibility at all or only focus on accessing the data.
+> In response to the need to develop accessible teaching materials within the data science discipline, this paper demonstrates and shares some teaching strategies that we have employed in our teaching introductory data science courses.
 
 
 # Reviewer
@@ -60,35 +59,23 @@ This is our response: need to create a section dededicated to a11y, and say that
     What are the significances of teaching visual accessibility at the 'introductory' data science level (as opposed to introducing them at a higher level of data science courses after students have a solid foundation in the discipline?
 }
 
-This is our response
-
-\Assignment{First Author}
-\WorkInProgress
-\Easy
+Thanks for the insightful comment. We have addressed this question as described in our responses to AE's comments above.
 
 \RC{
 If the visual aid accessibility was introduced in the 'introductory' courses, will students see it again in higher-level courses? In other words, would other faculty members who teach higher levels continue to use this in their courses? Students would not retain the information if they were only to see visual aid accessibility at the beginning of their data science journey.
 }
 
-This is our response: good point so it is critical to share the same principle across different and with upper level courses .
+Thank you very much for your great input. Although we demonstrated our examples in the context of introductory data science courses, we believe accessibility needs to be taught in other data science courses, including higher levels. This requires instructors' broader efforts. We have clarified this in our `Closing Remarks` section like below:
 
-\Assignment{First Author}
-\WorkInProgress
-\Easy
+> Thus far, we have just demonstrated some methods to teach accessibility in introductory data science courses with a special focus on accessible visualization.
+> However, as @shinoharaWhoTeachesAccessibility2018 highlight, teaching accessibility at scale requires large-scale adoption and implementation of these methods by faculty, who are organically contributing to, and constructing, instructors’ knowledge [@barnettConceptualisingCurriculumChange2001; @kirkTeacherVoiceOwnership2001]. We hope that this manuscript has just opened the discussion on teaching accessibility in the data science field, and we encourage other data science faculty to help us move towards large-scale curricular change beyond our examples.
+
 
 \RC{
 As visual aid accessibility is an essential part of various disciplines and career paths (science, engineering, business, arts and letters, etc.), would it be more beneficial to have a separate course (as a university-core or university-elective course) teaching visual aid accessibility rather than to integrate it into the foundational data science courses?
 }
 
-According to @shinoharaWhoTeachesAccessibility2018,
-
-> The most critical barriers to teaching accessibility that faculty reported were the absence of clear and discipline-specific accessibility learning objectives and the lack of faculty knowledge about accessibility.
-
-> Faculty desired resources that were specific to the areas of computing in which they teach rather than general accessibility resources and guidelines.
-
-\Assignment{First Author}
-\WorkInProgress
-\Easy
+We have addressed this comment above via [our first response to AE's comment](#response1).
 
 
 \newpage
