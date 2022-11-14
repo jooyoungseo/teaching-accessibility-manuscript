@@ -38,9 +38,18 @@ We quote below two separate parts that we have added to the `Introduction` secti
     The authors close with the powerful statement "We believe that an accessible future in data science requires educators to teach accessibility as part of the curriculum deliberately"--but they have failed to present what incorporating it deliberately entails.
     }
 
-This is our response: For example, instructors can include accessibility as one of their evaluation criteria for course assignments or make it as a chance to obtain bonus credits for the students' visualization work.
+We have clarified this point with the following sentence, in addition to the original sentence in the `Closing Remarks` section.
 
-> This is a section quoted from the revised manuscript to illustrate the change.
+> We believe that an accessible future in data science requires educators to teach accessibility as part of the curriculum deliberately. 
+This includes both teaching the topic as well as assessing it so that students are held accountable for their accessibility practices.
+
+Please note that we had also the following section in the original manuscript which we have also kept in the revised version.
+
+> Ample opportunities in learning accessibility should also include assessments. 
+For instance, instructors should modify assessment instructions and rubrics to include accessibility. 
+This will prevent students from just hearing about accessibility in the lecture and then forgetting about it. 
+Ideally, the assessments should not treat accessibility as a learning objective at a single point in the academic term. 
+For instance, if accessibility is covered in Week 3 of the term, students can (and should) still be expected to write alternate texts for visualizations until the end of the semester. 
 
 
 \RC{

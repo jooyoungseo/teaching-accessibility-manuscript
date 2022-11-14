@@ -293,6 +293,7 @@ Thus, in addition to teaching different representations of data, instructors may
 # Closing Remarks
 
 We believe that an accessible future in data science requires educators to teach accessibility as part of the curriculum deliberately. 
+This includes both teaching the topic as well as assessing it so that students are held accountable for their accessibility practices.
 We also acknowledge that what we have presented here is only a small portion of the intersection of visual accessibility and data science.
 
 Thus far, we have just demonstrated some methods to teach accessibility in introductory data science courses with a special focus on accessible visualization.
