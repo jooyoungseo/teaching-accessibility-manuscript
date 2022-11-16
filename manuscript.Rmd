@@ -104,7 +104,7 @@ To this end, we have considered multi-data representations and their relation to
 In incorporating accessibility to our course contents, we also wanted our students to be familiar with assistive technologies, and since our focus has been on visual accessibility, it was a natural fit to include screen readers. 
 Screen reader is an assistive technology that supports blind or visually impaired people in using their computer by reading aloud the contents. Recently, screen reader has been provided as one of the built-in accessibility features on operating systems, such as Microsoft Windows Narrator, Apple iOS VoiceOver, Android TalkBak and Linux Gnome Orca.
 
-However, we also want to make our teaching as inclusive as possible to other types of dis/abilities so that we are not just confined to issues of visual disabilities.Therefore, our curricular goal is to broadly ensure that the current and the next generation of data scientists provide public-facing outputs, including websites and analysis reports, in accessible forms and representations for people with diverse abilities. To achieve this goal, we set three specific and minimal learning objectives like below.
+However, we also want to make our teaching as inclusive as possible to other types of dis/abilities so that we are not just confined to issues of visual impairments. Therefore, our curricular goal is to broadly ensure that the current and the next generation of data scientists provide public-facing outputs, including websites and analysis reports, in accessible forms and representations for people with diverse abilities. To achieve this goal, we set three specific and minimal learning objectives like below.
 
 Students should:
 
