@@ -14,10 +14,10 @@ csl: "bib/chicago-author-date.csl"
 
 Dear Dr. Claire McKay Bowen,
 
-Thank you, the associate editor, and the reviewer for taking the time to consider our manuscript for publication at _`r rmarkdown::metadata$journal`_.
-
-We found the feedback to be supportive and helpful, however, we were not able to make the requested minor revisions. We outline our reasoning below.
-
+We are thankful for your time and consideration of our manuscript to be published in `r rmarkdown::metadata$journal`. Your comments were insightful and we
+appreciate the feedback you have provided.
+Unfortunately, despite our best efforts, we may not be able to make the requested minor revisions due to constraints on our part. Our reasoning is explained
+further below.
 
 # Comment
 
@@ -36,12 +36,12 @@ There are two approaches to teaching accessibility (in data science)
 2. As part of other courses (e.g. in introductory data science in our case)
 
 We believe a course outline would make sense to share if we were teaching a full course on accessibility. 
-However, we are teaching it similar to the latter option and this is what we cover in the manuscript.
-Thus a course outline we provide would be an outline for an introductory data science which would in a way be irrelevant in the scope of this manuscript.
-Afterall, we are not discussing whether to teach topics such as web scraping, working with dates, linear regression or not in an introductory course, which all are part of our course outlines and beyond the scope of the manuscript. 
+However, we are teaching it similarly to the latter option and this is what we cover in the manuscript.
+Thus a course outline we provide would be an outline for introductory data science which would in a way be irrelevant in the scope of this manuscript.
+After all, we are not discussing whether to teach topics such as web scraping, working with dates, and linear regression or not in an introductory course, which all are part of our course outlines and beyond the scope of the manuscript. 
 
-Since we are teaching accessibility as part of a course on data science, we had tried to answer the question "when to teach accessibility" in the manuscript already so that intructors would know whether to include it in their Week 2 content or Week 10 content.
-We had stated "We believe that a natural connection between data science and accessibility can be achieved in the data science classroom while presenting data visualization and then introducing the other aforementioned forms of data representation."
+Since we are teaching accessibility as part of a course on data science, we had tried to answer the question "when to teach accessibility" in the manuscript already so that instructors would know whether to include it in their Week 2 content or Week 10 content.
+We had stated, "We believe that a natural connection between data science and accessibility can be achieved in the data science classroom while presenting data visualization and then introducing the other aforementioned forms of data representation."
 Thus rather than providing a course outline, we are guiding instructors to include accessibility along with data visualization wherever that may fall in their own course outlines.
 
 **Example Assignments**
@@ -57,9 +57,9 @@ in Week 10."
 
 **Feedback from students and instructors**
 
-Any such data, whether in anecdotal form or course evaluation format, would require an approval from Intitutional Review Board (IRB). 
+Any such data, whether in anecdotal form or course evaluation format, would require approval from Intitutional Review Board (IRB). 
 The second author was supported by a grant to develop part of the teaching materials mentioned in the manuscript. 
 They collected data for grant evaluation purposes. 
 However, since the data are collected for evaluation purposes and not research purposes, they cannot be used or shared for research purposes without IRB approval. 
-Given the time line of the special issue, we will not be seeking IRB approval but hope to be able to publish with empirical data evidence in the future. 
+Given the timeline of the special issue, we will not be seeking IRB approval but hope to be able to publish empirical data evidence in the future. 
 

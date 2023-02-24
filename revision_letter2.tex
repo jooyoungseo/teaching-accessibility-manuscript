@@ -1,0 +1,210 @@
+% Taken from https://github.com/mschroen/review_response_letter
+% GNU General Public License v3.0
+
+\documentclass[draft]{article}
+
+\usepackage[includeheadfoot,top=20mm, bottom=20mm, footskip=2.5cm]{geometry}
+
+% Typography
+\usepackage[T1]{fontenc}
+\usepackage{times}
+%\usepackage{mathptmx} % math also in times font
+\usepackage{amssymb,amsmath}
+\usepackage{microtype}
+\usepackage[utf8]{inputenc}
+
+% Misc
+\usepackage{graphicx}
+\usepackage[hidelinks]{hyperref} %textopdfstring from pandoc
+\usepackage{soul} % Highlight using \hl{}
+
+% Table
+
+\usepackage{adjustbox} % center large tables across textwidth by surrounding tabular with \begin{adjustbox}{center}
+\renewcommand{\arraystretch}{1.5} % enlarge spacing between rows
+\usepackage{caption}
+\captionsetup[table]{skip=10pt} % enlarge spacing between caption and table
+
+% Section styles
+
+\usepackage{titlesec}
+\titleformat{\section}{\normalfont\large}{\makebox[0pt][r]{\bf \thesection.\hspace{4mm}}}{0em}{\bfseries}
+\titleformat{\subsection}{\normalfont}{\makebox[0pt][r]{\bf \thesubsection.\hspace{4mm}}}{0em}{\bfseries}
+\titlespacing{\subsection}{0em}{1em}{-0.3em} % left before after
+
+% Paragraph styles
+
+\setlength{\parskip}{0.6\baselineskip}%
+\setlength{\parindent}{0pt}%
+
+% Quotation styles
+
+\usepackage{framed}
+\let\oldquote=\quote
+\let\endoldquote=\endquote
+\renewenvironment{quote}{\begin{fquote}\advance\leftmargini -2.4em\begin{oldquote}}{\end{oldquote}\end{fquote}}
+
+% \usepackage{xcolor}
+\newenvironment{fquote}
+  {\def\FrameCommand{
+	\fboxsep=0.6em % box to text padding
+	\fcolorbox{black}{white}}%
+	% the "2" can be changed to make the box smaller
+    \MakeFramed {\advance\hsize-2\width \FrameRestore}
+    \begin{minipage}{\linewidth}
+  }
+  {\end{minipage}\endMakeFramed}
+
+% Table styles
+
+\let\oldtabular=\tabular
+\let\endoldtabular=\endtabular
+\renewenvironment{tabular}[1]{\begin{adjustbox}{center}\begin{oldtabular}{#1}}{\end{oldtabular}\end{adjustbox}}
+
+
+% Shortcuts
+
+%% Let textbf be both, bold and italic
+%\DeclareTextFontCommand{\textbf}{\bfseries\em}
+
+%% Add RC and AR to the left of a paragraph
+%\def\RC{\makebox[0pt][r]{\bf RC:\hspace{4mm}}}
+%\def\AR{\makebox[0pt][r]{AR:\hspace{4mm}}}
+
+%% Define that \RC and \AR should start and format the whole paragraph
+\usepackage{suffix}
+\long\def\RC#1\par{\makebox[0pt][r]{\bf RC:\hspace{4mm}}{\bf #1}\par\makebox[0pt][r]{AR:\hspace{10pt}}} %\RC
+\WithSuffix\long\def\RC*#1\par{{\bf #1}\par} %\RC*
+% \long\def\AR#1\par{\makebox[0pt][r]{AR:\hspace{10pt}}#1\par} %\AR
+\WithSuffix\long\def\AR*#1\par{#1\par} %\AR*
+
+
+%%%
+%DIF PREAMBLE EXTENSION ADDED BY LATEXDIFF
+%DIF UNDERLINE PREAMBLE %DIF PREAMBLE
+\RequirePackage[normalem]{ulem} %DIF PREAMBLE
+\RequirePackage{color} %DIF PREAMBLE
+\definecolor{offred}{rgb}{0.867, 0.153, 0.153} %DIF PREAMBLE
+\definecolor{offblue}{rgb}{0.0705882352941176, 0.168627450980392, 0.717647058823529} %DIF PREAMBLE
+\providecommand{\DIFdel}[1]{{\protect\color{offred}\sout{#1}}} %DIF PREAMBLE
+\providecommand{\DIFadd}[1]{{\protect\color{offblue}\uwave{#1}}} %DIF PREAMBLE
+%DIF SAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddbegin}{} %DIF PREAMBLE
+\providecommand{\DIFaddend}{} %DIF PREAMBLE
+\providecommand{\DIFdelbegin}{} %DIF PREAMBLE
+\providecommand{\DIFdelend}{} %DIF PREAMBLE
+%DIF FLOATSAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddFL}[1]{\DIFadd{#1}} %DIF PREAMBLE
+\providecommand{\DIFdelFL}[1]{\DIFdel{#1}} %DIF PREAMBLE
+\providecommand{\DIFaddbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFaddendFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelendFL}{} %DIF PREAMBLE
+%DIF END PREAMBLE EXTENSION ADDED BY LATEXDIFF
+
+% Fix pandoc related tight-list error
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% Add task difficulty and assignment commands from https://github.com/cdc08x/letter-2-reviewers-LaTeX-template
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{ifdraft}
+
+\newcommand{\TaskEstimationBox}[2]{%
+\ifoptiondraft{\parbox{1.0\linewidth}{\hfill \hfill {\colorbox{#2}{\color{White} \textbf{#1}}}}}%
+{}%
+}
+%
+\def\WorkInProgress {\TaskEstimationBox{Work in progress}{Cyan}}
+\def\AlmostDone {\TaskEstimationBox{Almost there}{NavyBlue}}
+\def\Done {\TaskEstimationBox{Done}{Blue}}
+%
+\def\NotEstimated {\TaskEstimationBox{Effort not estimated}{Gray}}
+\def\Easy {\TaskEstimationBox{Feasible}{ForestGreen}}
+\def\Medium {\TaskEstimationBox{Medium effort}{Orange}}
+\def\TimeConsuming {\TaskEstimationBox{Time-consuming}{Bittersweet}}
+\def\Hard {\TaskEstimationBox{Infeasible}{Black}}
+%
+\newcommand{\Assignment}[1]{
+%
+\ifoptiondraft{%
+\vspace{.25\baselineskip} \parbox{1.0\linewidth}{\hfill \hfill \vspace{.25\baselineskip} \normalfont{Assignment:} \normalfont{\textbf{#1}}}%
+}{}%
+}
+
+
+
+
+
+\begin{document}
+
+{\Large\bf Author response to reviews of}\\[1em]
+Manuscript JDS2207-022\\ \\
+{\Large Teaching Visual Accessibility in Introductory Data Science Classes with Multi-Modal Data Representations}\\[1em]
+{JooYoung Seo \& Mine Dogucu}\\
+{submitted to \it Journal of Data Science }\\
+\hrule
+
+\hfill {\bfseries RC:} \textbf{\textit{Reviewer Comment}}\(\quad\) AR: Author Response \(\quad\square\) Manuscript text
+
+\vspace{2em}
+
+Dear Dr.~Claire McKay Bowen,
+
+We are thankful for your time and consideration of our manuscript to be published in Journal of Data Science. Your comments were insightful and we
+appreciate the feedback you have provided.
+Unfortunately, despite our best efforts, we may not be able to make the requested minor revisions due to constraints on our part. Our reasoning is explained
+further below.
+
+\hypertarget{comment}{%
+\section{Comment}\label{comment}}
+
+\RC{
+    I agree with the AE and reviewer that the manuscript is strong. Before accepting the paper, if possible, we would like to see example assignments, course outlines, and/or feedback from students and instructors when incorporating your methods into your courses. This would provide other instructors a proof of concept when integrating your methods to their courses.
+    }
+
+We appreciate the support for the strength of the manuscript. We respond to the requested changes in three separate parts.
+
+\textbf{Course outlines}
+
+There are two approaches to teaching accessibility (in data science)
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  As a full course solely focused on accessibility (usually taught in information and computer sciences)
+\item
+  As part of other courses (e.g.~in introductory data science in our case)
+\end{enumerate}
+
+We believe a course outline would make sense to share if we were teaching a full course on accessibility.
+However, we are teaching it similarly to the latter option and this is what we cover in the manuscript.
+Thus a course outline we provide would be an outline for introductory data science which would in a way be irrelevant in the scope of this manuscript.
+After all, we are not discussing whether to teach topics such as web scraping, working with dates, and linear regression or not in an introductory course, which all are part of our course outlines and beyond the scope of the manuscript.
+
+Since we are teaching accessibility as part of a course on data science, we had tried to answer the question ``when to teach accessibility'' in the manuscript already so that instructors would know whether to include it in their Week 2 content or Week 10 content.
+We had stated, ``We believe that a natural connection between data science and accessibility can be achieved in the data science classroom while presenting data visualization and then introducing the other aforementioned forms of data representation.''
+Thus rather than providing a course outline, we are guiding instructors to include accessibility along with data visualization wherever that may fall in their own course outlines.
+
+\textbf{Example Assignments}
+
+Similar to the reasons for course outlines, we do not have any assignments specifically assessing accessibility.
+We had, however, already provided points about assessment in the manuscript as follows ``For instance,
+instructors incorporating accessibility should modify assessment instructions and rubrics to include
+accessibility. This will prevent students from just hearing about accessibility in the lecture
+and then forgetting about it. Ideally, the assessments should not treat accessibility as a learning
+objective at a single point in the academic term. For instance, if accessibility is covered in Week 3
+of the term, students can (and should) still be expected to write alternate texts for visualizations
+in Week 10.''
+
+\textbf{Feedback from students and instructors}
+
+Any such data, whether in anecdotal form or course evaluation format, would require approval from Intitutional Review Board (IRB).
+The second author was supported by a grant to develop part of the teaching materials mentioned in the manuscript.
+They collected data for grant evaluation purposes.
+However, since the data are collected for evaluation purposes and not research purposes, they cannot be used or shared for research purposes without IRB approval.
+Given the timeline of the special issue, we will not be seeking IRB approval but hope to be able to publish empirical data evidence in the future.
+
+
+\end{document}\grid
