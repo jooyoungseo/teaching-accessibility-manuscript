@@ -1,0 +1,65 @@
+---
+title       : "Teaching Visual Accessibility in Introductory Data Science Classes with Multi-Modal Data Representations"
+authors     : "JooYoung Seo & Mine Dogucu"
+journal     : "Journal of Data Science"
+manuscript  : "JDS2207-022"
+
+class       : "draft"
+output:
+  papaja::revision_letter_pdf:
+    keep_tex: true
+bibliography: ["bib/packages.bib", "bib/references.bib", "bib/teachinga11y.bib"]
+csl: "bib/chicago-author-date.csl"
+---
+
+Dear Dr. Claire McKay Bowen,
+
+Thank you, the associate editor, and the reviewer for taking the time to consider our manuscript for publication at _`r rmarkdown::metadata$journal`_.
+
+We found the feedback to be supportive and helpful, however, we were not able to make the requested minor revisions. We outline our reasoning below.
+
+
+# Comment
+
+\RC{
+    I agree with the AE and reviewer that the manuscript is strong. Before accepting the paper, if possible, we would like to see example assignments, course outlines, and/or feedback from students and instructors when incorporating your methods into your courses. This would provide other instructors a proof of concept when integrating your methods to their courses.
+    }
+
+We appreciate the support for the strength of the manuscript. We respond to the requested changes in three separate parts. 
+
+
+**Course outlines**
+
+There are two approaches to teaching accessibility (in data science)
+
+1. As a full course solely focused on accessibility (usually taught in information and computer sciences)
+2. As part of other courses (e.g. in introductory data science in our case)
+
+We believe a course outline would make sense to share if we were teaching a full course on accessibility. 
+However, we are teaching it similar to the latter option and this is what we cover in the manuscript.
+Thus a course outline we provide would be an outline for an introductory data science which would in a way be irrelevant in the scope of this manuscript.
+Afterall, we are not discussing whether to teach topics such as web scraping, working with dates, linear regression or not in an introductory course, which all are part of our course outlines and beyond the scope of the manuscript. 
+
+Since we are teaching accessibility as part of a course on data science, we had tried to answer the question "when to teach accessibility" in the manuscript already so that intructors would know whether to include it in their Week 2 content or Week 10 content.
+We had stated "We believe that a natural connection between data science and accessibility can be achieved in the data science classroom while presenting data visualization and then introducing the other aforementioned forms of data representation."
+Thus rather than providing a course outline, we are guiding instructors to include accessibility along with data visualization wherever that may fall in their own course outlines.
+
+**Example Assignments**
+
+Similar to the reasons for course outlines, we do not have any assignments specifically assessing accessibility.
+We had, however, already provided points about assessment in the manuscript as follows "For instance,
+instructors incorporating accessibility should modify assessment instructions and rubrics to include
+accessibility. This will prevent students from just hearing about accessibility in the lecture
+and then forgetting about it. Ideally, the assessments should not treat accessibility as a learning
+objective at a single point in the academic term. For instance, if accessibility is covered in Week 3
+of the term, students can (and should) still be expected to write alternate texts for visualizations
+in Week 10."
+
+**Feedback from students and instructors**
+
+Any such data, whether in anecdotal form or course evaluation format, would require an approval from Intitutional Review Board (IRB). 
+The second author was supported by a grant to develop part of the teaching materials mentioned in the manuscript. 
+They collected data for grant evaluation purposes. 
+However, since the data are collected for evaluation purposes and not research purposes, they cannot be used or shared for research purposes without IRB approval. 
+Given the time line of the special issue, we will not be seeking IRB approval but hope to be able to publish with empirical data evidence in the future. 
+
